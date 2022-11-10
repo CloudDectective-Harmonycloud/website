@@ -1,0 +1,18 @@
+[en]
+  languageName = "English"
+  contentDir = "content/en"
+  weight = 10
+  [en.params]
+    languageISO = "EN"
+    languageTag = "en-US"
+
+[cn]
+  languageName = "中文"
+  contentDir = "content/cn"
+  weight = 12
+  [cn.params]
+    languageISO = "CN"
+    languageTag = "zh-CN"
+    titleAddition = "基于eBPF的云原生可观测监控工具"
+    description = "Kindling是一个基于eBPF的云原生可观测监控工具，能够帮助用户理解应用在内核态和用户态的行为。"
+    titleHome = "Kindling"

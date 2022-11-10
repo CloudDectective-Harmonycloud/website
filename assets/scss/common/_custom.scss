@@ -1,0 +1,72 @@
+/** Custom styles */
+/* OpenSans-regular - latin */
+@font-face {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local("OpenSans-Regular"),  
+    url("/fonts/vendor/OpenSans/OpenSans-Regular.woff2") format("woff2"),
+    url("/fonts/vendor/OpenSans/OpenSans-Regular.woff") format("woff");
+}
+  
+/* OpenSans-500 - latin */
+@font-face {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src:
+    local("OpenSans-Medium"),
+    url("/fonts/vendor/OpenSans/OpenSans-Medium.woff2") format("woff2"),
+    url("/fonts/vendor/OpenSans/OpenSans-Medium.woff") format("woff");
+}
+  
+/* OpenSans-700 - latin */
+@font-face {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    local("OpenSans-Bold"),
+    url("fonts/vendor/OpenSans/OpenSans-Bold.woff2") format("woff2"),
+    url("fonts/vendor/OpenSans/OpenSans-Bold.woff") format("woff");
+}
+  
+/* OpenSans-italic - latin */
+@font-face {
+  font-family: OpenSans;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local("OpenSans-Italic"),
+    url("fonts/vendor/OpenSans/OpenSans-Italic.woff2") format("woff2"),
+    url("fonts/vendor/OpenSans/OpenSans-Italic.woff") format("woff");
+}
+  
+/* OpenSans-500italic - latin */
+@font-face {
+  font-family: OpenSans;
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src:
+    local("OpenSans-MediumItalic"),
+    url("fonts/vendor/OpenSans/OpenSans-MediumItalic.woff2") format("woff2"),
+    url("fonts/vendor/OpenSans/OpenSans-MediumItalic.woff") format("woff");
+}
+  
+/* OpenSans-700italic - latin */
+@font-face {
+  font-family: OpenSans;
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    local("OpenSans-BoldItalic"),
+    url("/fonts/vendor/OpenSans/OpenSans-BoldItalic.woff2") format("woff2"),
+    url("/fonts/vendor/OpenSans/OpenSans-BoldItalic.woff") format("woff");
+}

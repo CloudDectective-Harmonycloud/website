@@ -1,0 +1,101 @@
+# Meta Data for SEO
+
+## Homepage
+title = "Kindling"
+titleSeparator = "-"
+titleAddition = "eBPF-based Cloud Native Monitoring tool"
+description = "Kindling is an eBPF-based Cloud Native Monitoring tool, which can help you understand the app behavior from kernel to app code"
+
+## Documentation
+docsVersion = "0.5.0"
+
+## Open Graph
+# images = ["doks.png"]
+# ogLocale = "en_US"
+# domainTLD = "doks.netlify.app"
+# titleHome = "Doks Theme"
+
+## JSON-LD
+# schemaType = "Person"
+schemaType = "Organization"
+schemaName = "Kindling"
+schemaAuthor = "The Kindling Authors"
+schemaAuthorGitHub = "https://github.com/CloudDectective-Harmonycloud/"
+schemaLocale = "zh-CN"
+schemaLogo = "kindling-logo.png"
+schemaLogoWidth = 512
+schemaLogoHeight = 512
+schemaGitHub = "https://github.com/CloudDectective-Harmonycloud/kindling"
+schemaSection = "blog"
+
+## Sitelinks Search Box
+siteLinksSearchBox = false
+
+## Chrome Browser
+themeColor = "#3371e3"
+
+# Images - Temporarily left in place for backward compatibility
+quality = 85
+bgColor = "#fff"
+landscapePhotoWidths = [900, 800, 700, 600, 500]
+portraitPhotoWidths = [800, 700, 600, 500]
+lqipWidth = "20x"
+smallLimit = "300"
+
+# Images
+imageResponsive = true
+imageConvertTo = "webp"
+imageImageSizes = ["480","720","1080","1280","1600","2048"]
+singleSize = false
+imageAddClass = "img-fluid lazyload blur-up"
+
+### Image template
+defaultImage = "default-image.png" # put in `./assets/images/`
+fillImage = "1270x740 Center" # normalize image size
+
+# Footer
+footer = "Powered by <a class=\"text-muted\" href=\"https://gohugo.io/\">Hugo</a>, and <a class=\"text-muted\" href=\"https://getdoks.org/\">Doks</a>"
+
+# Feed
+copyRight = "Copyright (c) 2022- The Kindling Authors"
+
+# Alert
+alert = true
+alertDismissable = false
+alertText = "A new highlight feature \"Trace Profiling\" has been released! <a class=\"alert-link stretched-link\" href=\"/docs/usage/enable-trace-profiling\">Check out the Docs</a>"
+
+# Edit Page
+# repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
+repoHost = "GitHub"
+docsRepo = "https://github.com/CloudDectective-Harmonycloud/website"
+docsRepoBranch = "main"
+docsRepoSubPath = ""
+editPage = true
+lastMod = true
+
+[sections]
+  sectionNav = ["docs", "guides"]
+
+[options]
+  lazySizes = true
+  clipBoard = true
+  instantPage = true
+  flexSearch = true
+  searchSectionsShow = []
+  searchSectionsIndex = []
+  darkMode = true
+  bootStrapJs = true
+  breadCrumb = false
+  highLight = true
+  kaTex = false
+  multilingualMode = false
+  docsVersioning = false
+  fullWidth = false
+  navbarSticky = true
+  toTopButton = false
+  scrollSpy = false # experimental; needs Bootstrap >= 5.2.0-beta1
+
+[menu]
+  [menu.section]
+    auto = true
+    collapsibleSidebar = true
