@@ -36,7 +36,7 @@ docker run -it -v /usr:/host/usr -v /lib/modules:/host/lib/modules -v $PWD:/sour
 # Create a tarball which is needed when building the probe container image
 tar -cvzf kindling-falcolib-probe.tar.gz kindling-falcolib-probe/
 # Copy and wait for building the image.You may need to prefix /kindling path with your own absolute path
-cp kindling-falcolib-probe.tar.gz kindling/probe/docker/
+cp kindling-falcolib-probe.tar.gz kindling/collector/docker/
 ```
 
 ## Build kindling-agent itself
