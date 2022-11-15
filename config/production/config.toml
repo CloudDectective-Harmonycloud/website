@@ -1,2 +1,2 @@
 canonifyURLs = false
-baseURL = "https://kindlingproject.netlify.app"
+baseURL = "https://kindlingproject.netlify.app/"
