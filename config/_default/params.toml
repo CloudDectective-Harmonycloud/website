@@ -54,10 +54,10 @@ defaultImage = "default-image.png" # put in `./assets/images/`
 fillImage = "1270x740 Center" # normalize image size
 
 # Footer
-footer = "Powered by <a class=\"text-muted\" href=\"https://gohugo.io/\">Hugo</a>, and <a class=\"text-muted\" href=\"https://getdoks.org/\">Doks</a>"
+footer = "<span class=\"text-muted\">Copyright © 2021 HarmonyCloud All rights reserved.</span>"
 
 # Feed
-copyRight = "Copyright (c) 2022- The Kindling Authors"
+copyRight = "Copyright © 2021 HarmonyCloud All rights reserved."
 
 # Alert
 alert = true

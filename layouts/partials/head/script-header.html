@@ -6,3 +6,7 @@
   {{ $alertInit := resources.Get "js/alert-init.js" | js.Build | minify -}}
   <script>{{ $alertInit.Content | safeJS }}</script>
 {{- end -}}
+
+{{ range .Site.Params.customjs }}
+    <script type="text/javascript" src="{{ . | absURL }}"></script>
+{{- end }}

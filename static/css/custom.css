@@ -5,10 +5,10 @@ html, body {
     margin: 0;
     padding: 0;
 }
-@font-face {
+/* @font-face {
     font-family: ABeeZee;
     src: url(./ABeeZee-Regular.ttf);
-}
+} */
 /* index style */
 .index_wrap {
     background-color: rgb(6, 17, 55);
@@ -86,7 +86,7 @@ html, body {
     font-weight: 400;
     color: #FFFFFF;
 }
-.dmoe_btn {
+.demo_btn {
     display: inline-block;
     font-size: 20px;
     width: 220px;
@@ -101,6 +101,7 @@ html, body {
     font-weight: 400;
     border: 1px solid #2A8EFF;
     color: #2A8EFF;
+    margin-left: 15px;
 }
 .divider {
     width: 120px;
@@ -214,11 +215,11 @@ html, body {
     top: 50%;
     left: 50%;
     width: 100px;
-    transform: translate(-50px, 0px);
-    -ms-transform: translate(-50px, 0px);
-    -webkit-transform: translate(-50px, 0px);
-    -moz-transform: translate(-50px, 0px);
-    -o-transform: translate(-50px, 0px);
+    transform: translate(-50px, 0);
+    -ms-transform: translate(-50px, 0);
+    -webkit-transform: translate(-50px, 0);
+    -moz-transform: translate(-50px, 0);
+    -o-transform: translate(-50px, 0);
 }
 #play_icon.show{
     display: block;
@@ -239,9 +240,9 @@ html, body {
 
 .full-video {
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 60px);
     position: fixed;
-    top: 0;
+    top: 60px;
     left: 0;
     z-index: 99;
     background-color: #000000;
@@ -252,7 +253,7 @@ html, body {
     display: block;
     position: fixed;
     right: 10px;
-    top: 12px;
+    top: 72px;
     z-index: 100;
     width: 30px;
     cursor: pointer;
@@ -401,7 +402,7 @@ html, body {
     float: left;
 }
 .li_list img{
-    width: 100%;
+    width: 92%;
     height: calc(100% - 25px);
 }
 .odiv_nav{
@@ -471,6 +472,11 @@ html, body {
     font-size: 16px;
     text-align: center;
 }
+.code_item p {
+    margin-bottom: 0;
+    color: #333333;
+}
+
 .code_img {
     width: 110px;
     height: 110px;
