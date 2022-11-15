@@ -1,1 +1,4 @@
 <!-- Custom head -->
+{{ range .Site.Params.customcss }}
+    <link rel="stylesheet" href="{{ . | absURL }}">
+{{- end }}

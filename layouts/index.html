@@ -1,60 +1,183 @@
-{{ define "main" }}
-<section class="section container-fluid mt-n3 pb-3">
-  <div class="row justify-content-center">
-    <div class="col-lg-12 text-center">
-      <img src="{{ .Site.BaseURL | absURL }}/logo-word.png" alt="Kindling Logo" height="260">
-      <!-- <h1 class="mt-0">{{ .Title }}</h1> -->
-    </div>
-    <div class="col-lg-9 col-xl-8 text-center">
-      <p class="lead">{{ .Params.lead | safeHTML }}</p>
-      <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}overview-and-concepts/overview/" role="button">Get Started</a>
-      <p class="meta">Open-source Apache-2.0 Licensed. <a href="https://github.com/CloudDectective-Harmonycloud/kindling/releases/tag/v{{ .Site.Params.docsVersion }}">GitHub v{{ .Site.Params.docsVersion }}</a></p>
-    </div>
-  </div>
-</section>
-{{ end }}
+
 
 {{ define "sidebar-prefooter" }}
 <section class="section section-sm">
-  <div class="container">
-    <div class="row justify-content-center text-center">
-      <div class="col-lg-5">
-        <h2 class="h4">Security aware</h2>
-        <p>Get A+ scores on <a href="https://observatory.mozilla.org/analyze/doks-child-theme.netlify.app">Mozilla Observatory</a> out of the box. Easily change the default Security Headers to suit your needs.</p>
-      </div>
-      <div class="col-lg-5">
-        <h2 class="h4">Fast by default ⚡️</h2>
-        <p>Get 100 scores on <a href="https://googlechrome.github.io/lighthouse/viewer/?gist=59aafe464a68f8bc30b8e9a636d5b053">Google Lighthouse</a> by default. Doks removes unused css, prefetches links, and lazy loads images.</p>
-      </div>
-      <div class="col-lg-5">
-        <h2 class="h4">SEO-ready</h2>
-        <p>Use sensible defaults for structured data, open graph, and Twitter cards. Or easily change the SEO settings to your liking.</p>
-      </div>
-    </div>
-    <div class="row justify-content-center text-center">
-      <div class="col-lg-5">
-        <h2 class="h4">Full text search</h2>
-        <p>Search your Doks site with FlexSearch. Easily customize index settings and search options to your liking.</p>
-      </div>
-      <div class="col-lg-5">
-        <h2 class="h4">Page layouts</h2>
-        <p>Build pages with a landing page, blog, or documentation layout. Add custom sections and components to suit your needs.</p>
-      </div>
-      <div class="col-lg-5">
-        <h2 class="h4">Dark mode</h2>
-        <p>Switch to a low-light UI with the click of a button. Change colors with variables to match your branding.</p>
-      </div>
+  <div class="index_wrap">
+    <div class="index_content">
+        <div class="index_text">
+            <h1>Kindling</h1>
+            <div class="divider"></div>
+            <h2>eBPF-based Cloud Native Monitoring tool</h2>
+            <h3>Understanding the app behavior from kernel to app code</h3>
+            <a href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}overview-and-concepts/overview/" target="_blank" class="get_started">Get Started</a>
+            <a href="#camera" class="dmoe_btn">Watch the Demo</a>
+        </div>
+        <div class="index_img">
+            <img src="{{ .Site.BaseURL | absURL }}images/index.gif" width="96%" />
+        </div>
     </div>
   </div>
-</section>
-{{ end }}
-
-{{ define "sidebar-footer" }}
-<section class="section section-sm container-fluid">
-  <div class="row justify-content-center text-center">
-    <div class="col-lg-9">
-      {{- .Content -}}
+  <div class="why_wrap1">
+    <header class="why_header">Why Choose Kindling</header>
+    <main class="why_main1_1">
+        <div class="why_main1_2">
+            <div class="why_img1_1" id="camera">
+                <video id="camera_video" poster="{{ .Site.BaseURL | absURL }}images/camera1.png" src="{{ .Site.BaseURL | absURL }}videos/jieshao.mov" controls autoplay></video>
+                <img src="{{ .Site.BaseURL | absURL }}images/play-circle.png" id="play_icon"/>
+                <img src="{{ .Site.BaseURL | absURL }}images/close.png" id="video-close" class="close-icon" />
+            </div>
+            <div class="why_content2">
+                <div class="page_count1">01</div>
+                <div class="why_title1">
+                    Trace Profiling
+                    <a class="read_more_btn" href="{{ .Site.BaseURL | absURL }}docs/usage/enable-trace-profiling/" target="_blank">Read more</a>
+                </div>
+                <div class="divider2"></div>
+                <ul class="why_introduce1">
+                    <li>How all threads were executed is recorded and can be replayed.</li>
+                    <li>The exact thread which executed the trace span is highlighted.</li>
+                    <li>The logs printed by each thread are collected and correlated to the relative thread with its timestamp.</li>
+                    <li>The code execution flame graph is correlated to the time series where CPU is busy.</li>
+                    <li>The network-related metrics are correlated to the time series where the network syscalls are executing.</li>
+                    <li>The file-related metrics are correlated to the time series where the file syscalls are executing.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="why_main1_2">
+            <div class="camera_info">
+                <img src="{{ .Site.BaseURL | absURL }}images/camera2.png" width="100%" />
+                <div class="why_introduce1">An example about "Pessimistic Lock": the thread task-2 spends most of its time to wait thread task-1. And also you can see the stack info.</div>
+            </div>
+            <div class="camera_info">
+                <img src="{{ .Site.BaseURL | absURL }}images/camera3.png" width="100%" />
+                <div class="why_introduce1">An example about "Thread Starvation": the request waited for some time after the IO started before it was actually executed, indicating that the thread resources were insufficient.</div>
+            </div>
+        </div>
+    </main>
+  </div>
+  <div class="why_wrap1_2">
+      <main class="why_main1_2 mobile_why_main">
+          <div class="why_content1">
+              <div class="page_count1">02</div>
+              <div class="why_title1">RootCause Triage</div>
+              <div class="divider2"></div>
+              <div class="why_introduce1">With RPC trace，the user can identify the root-cause direction quickly, like
+                  if the
+                  issue is
+                  caused by network issue, code issue, storage issue, mutex Lock issue, the out-banding call
+                  issue. The first version can only identify request sending issue, code issue, downloading issue.
+                  The other issue identification is under active developing, will coming soon.</div>
+          </div>
+          <div class="why_img1">
+              <img src="{{ .Site.BaseURL | absURL }}images/why_img1.png" width="100%" />
+          </div>
+      </main>
+  </div>
+  <div class="why_wrap2">
+      <main class="why_main1 mobile_why_main">
+          <div class="why_img2">
+              <img src="{{ .Site.BaseURL | absURL }}images/why_img2.png" width="100%" />
+          </div>
+          <div class="why_content2">
+              <div class="page_count2">03</div>
+              <div class="why_title2">Network Flow Visualization</div>
+              <div class="divider2"></div>
+              <div class="why_introduce2">The service map can be viewed and many network metric can be monitored
+                  like，re-transmit，DNS，round-trip time. And golden metric like traffic，latency, error rate can be
+                  also viewed.</div>
+          </div>
+      </main>
+  </div>
+  <div class="why_wrap3">
+      <main class="why_main2">
+          <div class="page_count3">04</div>
+          <div class="why_content3">
+              <div class="why_title3">Prometheus Integration For Full Stack Monitoring</div>
+              <div class="divider2"></div>
+              <div class="why_introduce3">cAdvisor/MetricServer/Node Exporter/NPD, and Prometheus has been integrated
+                  and
+                  enriched with Kindling metric for full stack monitoring. The pod and node status metric can be
+                  viewed when the user found the response time is slow, and all the data are correlated. Standard
+                  version has this feature.</div>
+              <div id="box">
+                  <ul class="ul_list">
+                      <li class="li_list"><img src="{{ .Site.BaseURL | absURL }}images/carousel_img1.png" alt="" /></li>
+                      <li class="li_list"><img src="{{ .Site.BaseURL | absURL }}images/carousel_img2.png" alt="" /></li>
+                      <li class="li_list"><img src="{{ .Site.BaseURL | absURL }}images/carousel_img3.png" alt="" /></li>
+                      <li class="li_list"><img src="{{ .Site.BaseURL | absURL }}images/carousel_img4.png" alt="" /></li>
+                      <li class="li_list"><img src="{{ .Site.BaseURL | absURL }}images/carousel_img1.png" alt="" /></li>
+                  </ul>
+                  <div class="odiv_nav">
+                      <span class="span_list"></span>
+                      <span class="span_list"></span>
+                      <span class="span_list"></span>
+                      <span class="span_list"></span>
+                  </div>
+              </div>
+          </div>
+      </main>
+  </div>
+  <div class="why_wrap4">
+      <main class="why_main1 mobile_why_main">
+          <div class="why_img2">
+              <img src="{{ .Site.BaseURL | absURL }}images/why_img4.png" width="100%" />
+          </div>
+          <div class="why_content2">
+              <div class="page_count2">05</div>
+              <div class="why_title2">Open Source</div>
+              <div class="divider2"></div>
+              <div class="why_introduce2">Kindling will be open-sourced with two version. One is light version can be
+                  integrated into Prometheus server and metric can be viewed with Grafana plugin. Another version
+                  is the standard version, which has much detailed information and integrated with Prometheus for
+                  full stack monitoring.</div>
+          </div>
+      </main>
+  </div>
+  <div class="who_wrap">
+      <header class="who_header">Who Choose Kindling</header>
+      <main class="who_main">
+          <div class="who_main_item">
+              <img src="{{ .Site.BaseURL | absURL }}images/aliyun.png" width="100%" />
+          </div>
+          <div class="who_main_item">
+              <img src="{{ .Site.BaseURL | absURL }}images/zjgw.png" width="100%" />
+          </div>
+          <div class="who_main_item">
+              <img src="{{ .Site.BaseURL | absURL }}images/zggsyh.png" width="100%" />
+          </div>
+          <div class="who_main_item">
+              <img src="{{ .Site.BaseURL | absURL }}images/pufa.png" width="100%" />
+          </div>
+          <div class="who_main_item">
+              <img src="{{ .Site.BaseURL | absURL }}images/jxjk.png" width="100%" />
+          </div>
+          <div class="who_main_item">
+              <img src="{{ .Site.BaseURL | absURL }}images/zgyh.png" width="100%" />
+          </div>
+          <div class="who_main_item">
+              <img src="{{ .Site.BaseURL | absURL }}images/ctzq.png" width="100%" />
+          </div>
+      </main>
+  </div>
+  <div class="contact"></div>
+  <div class="contact_content">
+    <div class="code_content">
+        <div class="code_item">
+            <img src="{{ .Site.BaseURL | absURL }}images/gzh_code.jpg" class="code_img" />
+            <p>公众号</p>
+        </div>
+        <div class="code_item">
+            <img src="{{ .Site.BaseURL | absURL }}images/wechat_code.png" class="code_img" />
+            <p>微信</p>
+        </div>
     </div>
+    <a class="close">
+        <svg viewBox="64 64 896 896" focusable="false" data-icon="close" width="1em" height="1em"
+            fill="currentColor" aria-hidden="true">
+            <path d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 00203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z">
+            </path>
+        </svg>
+    </a>
   </div>
 </section>
 {{ end }}

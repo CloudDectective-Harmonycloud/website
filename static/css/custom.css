@@ -1,0 +1,497 @@
+html, body {
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: ABeeZee;
+    src: url(./ABeeZee-Regular.ttf);
+}
+/* index style */
+.index_wrap {
+    background-color: rgb(6, 17, 55);
+    color: #FFF;
+    position: relative;
+}
+.index_logo {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 300px;
+}
+.index_menu {
+    position: absolute;
+    top: 25px;
+    right: 13px;
+    height: 32px;
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-end;
+}
+.index_demo, .index_blog, .index_doc, .index_github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+    background-color: #2A8EFF;
+    color: #FFF;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 12px;
+}
+.index_content {
+    padding: 110px 80px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.index_text {
+    padding: 60px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 55%;
+    margin-right: -30px;
+}
+.index_text h1 {
+    font-size: 7vw;
+    font-family: Helvetica;
+}
+.index_text h2 {
+    font-size: 3.5vw;
+    margin-bottom: 35px;
+    width: 90%;
+    font-family: Helvetica;
+}
+.index_text h3 {
+    font-size: 1.7vw;
+    font-weight: 500;
+    white-space: nowrap;
+    font-family: ABeeZee;
+    margin-bottom: 45px;
+}
+.get_started {
+    display: inline-block;
+    font-size: 20px;
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #2A8EFF;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: ABeeZee;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.dmoe_btn {
+    display: inline-block;
+    font-size: 20px;
+    width: 220px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: ABeeZee;
+    font-weight: 400;
+    border: 1px solid #2A8EFF;
+    color: #2A8EFF;
+}
+.divider {
+    width: 120px;
+    height: 6px;
+    background-color: #2A8EFF;
+    margin-bottom: 30px;
+}
+.index_img {
+    height: 100%;
+    width: 46%;
+    max-width: 720px;
+    margin-left: -30px;
+}
+/* Why choose Kindling style */
+.why_wrap1, .why_wrap2, .why_wrap3, .why_wrap4, .who_wrap {
+    width: 100%;
+    background-color: #FFFFFF !important;
+}
+
+.camera_info {
+    width: 40%;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* RootCause Triage style */
+.why_header {
+    font-size: 64px;
+    font-weight: bold;
+    color: #333333;
+    padding: 50px 0;
+    text-align: center;
+    font-family: Helvetica;
+    background-color: #FFFFFF !important;
+}
+.why_main1_1 {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+}
+.why_main1_2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.why_main1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.why_content1 {
+    width: 40%;
+    margin-right: 50px;
+    position: relative;
+    transform: translateY(-20px);
+}
+.page_count1 {
+    font-size: 100px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.06);
+    position: absolute;
+    font-family: Helvetica;
+    top: 0;
+    left: 0;
+}
+.why_title1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333333;
+    margin-top: 62px;
+    font-family: Helvetica;
+}
+.read_more_btn {
+    display: inline-block;
+    border-radius: 3px;
+    border: 1px solid #2A8EFF;
+    font-size: xx-small;
+    color: #2A8EFF;
+    padding: 3px 8px;
+    font-weight: 300;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.read_more_btn:hover {
+    border: 1px solid #107af2;
+    color: #107af2;
+}
+.divider2 {
+    width: 60px;
+    height: 6px;
+    background: #2A8EFF;
+    margin: 15px 0 25px;
+}
+.why_introduce1 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 40px;
+    font-family: ABeeZee;
+}
+.why_img1_1 {
+    width: 40%;
+    margin-right: 50px;
+    padding-top: 150px;
+    position: relative;
+}
+#play_icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    transform: translate(-50px, 0px);
+    -ms-transform: translate(-50px, 0px);
+    -webkit-transform: translate(-50px, 0px);
+    -moz-transform: translate(-50px, 0px);
+    -o-transform: translate(-50px, 0px);
+}
+#play_icon.show{
+    display: block;
+}
+#play_icon.hide{
+    display: none;
+}
+.why_img1_1 img{
+    margin-left: -15px;
+}
+.why_img1_1 video{
+    width: 95%;
+    border-radius: 10px;
+}
+.why_img1_1 .close-icon{
+    display: none;
+}
+
+.full-video {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+}
+.full-video .close-icon {
+    display: block;
+    position: fixed;
+    right: 10px;
+    top: 12px;
+    z-index: 100;
+    width: 30px;
+    cursor: pointer;
+}
+.full-video video{
+    width: 95%;
+    margin: 0 2.5%;
+}
+
+.why_img1 {
+    width: 40%;
+    margin-left: 50px;
+}
+.why_wrap1_2 {
+    background-image: url('../images/why_bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 120px 0 60px 0;
+}
+/* Network flow visualization */
+.why_wrap2 {
+    background-image: url('../images/why_bg1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 20px 0;
+}
+.why_content2 {
+    width: 40%;
+    margin-left: 20px;
+    position: relative;
+}
+.page_count2 {
+    font-size: 100px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: Helvetica;
+}
+.why_title2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-top: 62px;
+    font-family: Helvetica;
+}
+.why_introduce2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 40px;
+    font-family: ABeeZee;
+}
+.why_img2 {
+    width: 45%;
+    margin-right: 20px;
+}
+/* Prometheus integration for full stack monitoring */
+.why_main2 {
+    padding: 60px 250px 80px;
+    position: relative;
+}
+.page_count3 {
+    font-size: 100px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.06);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Helvetica;
+}
+.why_content3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.why_title3 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 62px;
+    width: 50%;
+    text-align: center;
+    font-family: Helvetica;
+}
+.why_introduce3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 40px;
+    text-align: center;
+    font-family: ABeeZee;
+}
+/* Open-source */
+.why_wrap4 {
+    background-image: url('../images/why_bg2.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+/* Who choose Kindling */
+.who_header {
+    font-size: 64px;
+    font-weight: bold;
+    color: #333333;
+    padding: 80px 0;
+    text-align: center;
+    font-family: Helvetica;
+    background-color: #FFFFFF;
+}
+.who_main {
+    font-size: 0;
+    padding: 0 5vw 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.who_main_item {
+    width: 17.5vw;
+    height: 7vw;
+    margin: 30px;
+}
+.footer {
+    height: 60px;
+    background-color: #333;
+    color: #FFF;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#box{
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.ul_list{
+    position: absolute;
+}
+.li_list{
+    list-style: none;
+    float: left;
+}
+.li_list img{
+    width: 100%;
+    height: calc(100% - 25px);
+}
+.odiv_nav{
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.span_list{
+    width: 10px;
+    height: 10px;
+    border: 1px solid #AAAAAA;
+    border-radius: 50%;
+    float: left;
+    margin: 10px 4px;
+    cursor: pointer;
+}
+/* 联系我们 */
+.contact {
+    background-color: #FFFFFF;
+    background-image: url('../images/wechat_gray.png');
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: center;
+    position: fixed;
+    right: 24px;
+    bottom: 32px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    box-shadow: 0 1px 4px -2px rgb(0 0 0 / 13%), 0 2px 8px rgb(0 0 0 / 8%), 0 8px 16px 4px rgb(0 0 0 / 4%);
+    cursor: pointer;
+    z-index: 997;
+}
+.contact:hover {
+    background-color: #2A8EFF;
+    background-image: url('../images/wechat_white.png');
+    animation: contactHoverMove .8s ease;
+}
+.contact_content {
+    display: none;
+    position: fixed;
+    right: 80px;
+    bottom: 0;
+    padding: 24px 16px 16px 16px;
+    box-shadow: 0 1px 4px -2px rgb(0 0 0 / 13%), 0 2px 8px rgb(0 0 0 / 8%), 0 8px 16px 4px rgb(0 0 0 / 4%);
+    background: #fff;
+    border-radius: 8px;
+    z-index: 1000;
+    animation: contactMove .8s ease;
+}
+.close {
+    display: none;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    color: #595959;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+.code_content {
+    display: flex;
+    justify-content: center;
+}
+.code_item {
+    font-size: 16px;
+    text-align: center;
+}
+.code_img {
+    width: 110px;
+    height: 110px;
+}
+@keyframes contactMove {
+    0% {
+        bottom: -100px;
+        opacity: 0;
+    }
+    100% {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+@keyframes contactHoverMove {
+    0% {
+        background-color: #FFFFFF;
+        background-image: url('../images/wechat_gray.png');
+    }
+    100% {
+        background-color: #2A8EFF;
+        background-image: url('../images/wechat_white.png');
+    }
+}
