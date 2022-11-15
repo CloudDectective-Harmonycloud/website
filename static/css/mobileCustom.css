@@ -1,0 +1,252 @@
+/* 移动端样式 */
+@media screen and (max-width: 980px) {
+    .index_logo {
+        width: 3rem;
+        top: 0.25rem;
+        left: 0.25rem;
+    }
+    .index_menu {
+        height: 0.64rem;
+        top: 0.2rem;
+        right: 0.14rem;
+        font-size: 0;
+    }
+    .index_demo, .index_blog, .index_doc, .index_github {
+        height: 0.64rem;
+        width: 0.64rem;
+        padding: 0;
+        margin-right: 0.11rem;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-size: 0;
+    }
+    .index_demo {
+        background-image: url('../images/demo.png');
+        background-size: 78%;
+    }
+    .index_blog {
+        background-image: url('../images/blog.png');
+        background-size: 78%;
+    }
+    .index_doc {
+        background-image: url('../images/documents.png');
+        background-size: 85%;
+    }
+    .index_github {
+        background-image: url('../images/github.png');
+        background-size: 90%;
+    }
+    .index_content {
+        padding: 1.7rem 0 1rem 0;
+        display: block;
+    }
+    .index_text {
+        padding: 0 0 0.5rem 0;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .index_img {
+        height: 100%;
+        width: 100%;
+        max-width: none;
+        margin: 0 auto;
+    }
+    .divider {
+        width: 0.8rem;
+        margin-bottom: 0.6rem;
+    }
+    .index_text h1 {
+        font-size: 0.64rem;
+        margin-bottom: 0.2rem;
+    }
+    .index_text h2 {
+        font-size: 0.36rem;
+        width: fit-content;
+        text-align: center;
+        margin-bottom: 0.3rem;
+    }
+    .index_text h3 {
+        font-size: 0.28rem;
+        width: fit-content;
+        white-space: break-spaces;
+        text-align: center;
+        padding: 0 20%;
+        line-height: 0.48rem;
+        margin-bottom: 0.3rem;
+    }
+    .get_started {
+        width: 90%;
+        font-size: 0.36rem;
+        line-height: 0.80rem;
+        height: 0.80rem;
+    }
+    .dmoe_btn {
+        width: 90%;
+        font-size: 0.36rem;
+        line-height: 0.80rem;
+        height: 0.80rem;
+        margin-top: 0.5rem;
+    }
+    /* RootCause Triage style */
+    .why_header {
+        /* font-size: 0.64rem; */
+        font-size: 8.6vw;
+        margin: 1rem 0 0.6rem 0;
+    }
+    .why_main1 {
+        flex-direction: column;
+        margin-bottom: 0 !important;
+    }
+    .why_content1 {
+        width: 90%;
+        margin: auto;
+    }
+    .page_count1, .page_count2, .page_count3 {
+        font-size: 1rem;
+    }
+    .why_title1 {
+        /* font-size: 0.36rem; */
+        font-size: 4.8vw;
+        margin-top: 0.6rem;
+    }
+    .why_introduce1 {
+        font-size: 0.24rem;
+        line-height: 0.48rem;
+        margin-bottom: 0.3rem;
+    }
+    .why_main1_1 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .why_main1_2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .why_img1 {
+        width: 90%;
+        margin: auto;
+    }
+    .why_img1_1 {
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .why_img1_1 .close-icon{
+        display: none;
+    }
+    .full-video video{
+        width: 95%;
+        margin: 50% 2.5%;
+    }
+    
+    .camera_info {
+        width: 90%;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile_why_main {
+        flex-direction: column-reverse;
+    }
+    /* Network flow visualization */
+    .why_wrap2 {
+        background-image: url('../images/mobile_why_bg1.png');
+    }
+    .why_content2 {
+        width: 90%;
+        margin-top: 0.6rem auto;
+    }
+    .why_title2 {
+        font-size: 4.8vw;
+        margin-top: 0.6rem;
+    }
+    .why_introduce2 {
+        font-size: 0.24rem;
+        line-height: 0.48rem;
+    }
+    .why_img2 {
+        width: 90%;
+        margin-right: 0;
+    }
+    /* Prometheus integration for full stack monitoring */
+    .why_main2 {
+        padding: 60px 4% 80px;
+        position: relative;
+    }
+    .why_title3 {
+        font-size: 4.8vw;
+        margin-top: 0.6rem;
+        width: 90%;
+    }
+    .why_introduce3 {
+        font-size: 0.24rem;
+        line-height: 0.48rem;
+    }
+    /* Open-source */
+    .why_wrap4 {
+        background-image: url('../images/mobile_why_bg2.png');
+    }
+    /* Who choose Kindling */
+    .who_header {
+        font-size: 8.6vw;
+        margin: 1rem 0 0.6rem 0;
+    }
+    .who_main {
+        padding: 0 5%;
+        margin-bottom: 0.6rem;
+    }
+    .who_main_item {
+        width: 2.5rem;
+        height: 1rem;
+        margin: 0.2rem;
+    }
+    .footer {
+        font-size: 0.22rem;
+        line-height: 0.40rem;
+        padding: 0.25rem;
+        height: auto;
+    }
+    /* 联系我们 */
+    .contact {
+        right: 0.5rem;
+        bottom: 0.6rem;
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+    .contact_content {
+        right: 50%;
+        bottom: 50%;
+        border-radius: 0.123rem;
+        transform: translate(50%, 50%);
+        padding: 0.42rem 0.28rem 0.28rem 0.28rem;
+        display: none;
+        animation: mobileContactMove .8s ease;
+    }
+    .code_item {
+        font-size: 0.28rem;
+    }
+    .close {
+        display: block;
+        right: 0.123rem;
+        top: 0.123rem;
+        font-size: 0.28rem;
+    }
+    .code_img {
+        height: 2.2rem;
+        width: 2.2rem;
+    }
+    @keyframes mobileContactMove {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
