@@ -14,7 +14,9 @@ weight: 010
 toc: true
 ---
 
-感谢大家对Kindling感兴趣，为了让大家可以快速上手使用Kindling, 我们提供了在线Demo方便大家去探索Kindling功能。
+> 📌 安装Kindling后，以下功能会自动启用。
+
+感谢大家对Kindling感兴趣，为了让大家可以快速上手使用Kindling，我们提供了在线Demo方便大家去探索Kindling功能。
 
 ## Demo场景介绍
 

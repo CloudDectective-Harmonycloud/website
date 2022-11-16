@@ -14,6 +14,9 @@ weight: 015
 toc: true
 ---
 
+> 📌 要启用该功能，请先[安装Kindling](/docs/installation/kindling-agent/requirements/)，再[启用Trace Profiling功能](/docs/usage/enable-trace-profiling/)。
+> 
+
 在编程时，我们常常使用锁来保护临界资源，但使用锁意味着当有多个线程想要获取到锁时，线程间就会发生竞争，导致线程进入阻塞状态。如果开发者不恰当地使用了锁，可能会导致程序性能下降，无法充分利用CPU资源。
 
 Kindling的Trace Profiling功能能够让用户直观地观察到Java程序的锁竞争情况，帮助用户定位问题代码、高效地解决问题。本篇文章将展示如何使用Kindling来观察Java程序的锁竞争情况，案例中的程序基于Spring Boot完成，使用Undertow作为容器，程序作为服务端对外提供API。
