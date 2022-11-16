@@ -40,3 +40,8 @@
   port = 8888
   publish = "public"
   autoLaunch = false
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "media-src 'self' https://k8s-bpf-probes-public.oss-cn-hangzhou.aliyuncs.com/*"
