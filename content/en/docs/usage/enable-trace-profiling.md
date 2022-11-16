@@ -18,7 +18,7 @@ toc: true
 - We recommend that users install the SkyWalking agent of Java before enabling trace profiling for full features supported.
 
 ## Instructions
-> If you have not installed the Kindling agent, please do it first before you follow the instructions. See the [Installation](http://www.kindling.space:33215/project-1/doc-76/) for how to install.
+> If you have not installed the Kindling agent, please do it first before you follow the instructions. See the [Installation](/docs/installation/kindling-agent/requirements) for how to install.
 
 After you have installed the agent successfully, the function is disabled by default, and you need to manually enable it following the instructions:
 
@@ -38,4 +38,4 @@ After you have installed the agent successfully, the function is disabled by def
 5. Click the upper filter box to filter the profile results to be viewed.
 
 ## Use cases
-See the use cases on [Use Cases](http://www.kindling.space:33215/project-1/doc-89/). We appreciate any new cases from you. Please feel free to open an issue if you want to contribute your cases to the community. 
+See the use cases on [Use Cases](/docs/usage). We appreciate any new cases from you. Please feel free to open an issue if you want to contribute your cases to the community. 

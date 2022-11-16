@@ -99,11 +99,11 @@ The standard version will be open-sourced in 2023.
 
 ## Get started
 
-You can deploy Kindling easily, check out the [Installation Guide](http://www.kindling.space:33215/project-1/doc-3/) for details.
+You can deploy Kindling easily, check out the [Installation Guide](/docs/installation) for details.
 
 ## Documentation
 
-The Kindling documentation is available on our [Kindling website]( http://www.kindling.space:33215/project-1/).
+The Kindling documentation is available on our [Kindling website](https://kindlingproject.netlify.com).
 
 ## Contributing 
 

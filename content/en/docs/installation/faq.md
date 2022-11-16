@@ -51,7 +51,7 @@ apt-get -y install linux-headers-$(uname -r)
 ```bash
 yum -y install kernel-devel-$(uname -r)
 ```
-Of course, you can also [download RPM files](http://www.kindling.space:33215/project-1/doc-36/) manually to install the header files.
+Of course, you can also [download RPM files](/docs/installation/download-linux-kernel-headers) manually to install the header files.
 
 2. Rebuild the Kindling Agent image.
 
@@ -97,5 +97,5 @@ insmod error:cloud not insert xxx.ko:Permission denied
 
 #### Solution
 - Confirm that the kindling agent has enabled the privileged mode.
-- Confirm that SELinux is turned off on the node where the kindling agent is located.
+- Confirm that SELinux is turned off on the node where the kindling agent is located. See details at [Disabling SELinux](https://www.ibm.com/docs/ja/ahts/4.0?topic=t-disabling-selinux).
 - Confirm that CRI is running with root privileges.
