@@ -44,4 +44,4 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "media-src 'self' https://k8s-bpf-probes-public.oss-cn-hangzhou.aliyuncs.com/*"
+    Content-Security-Policy = "default-src 'self'; media-src https://k8s-bpf-probes-public.oss-cn-hangzhou.aliyuncs.com"
