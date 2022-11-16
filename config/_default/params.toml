@@ -54,10 +54,10 @@ defaultImage = "default-image.png" # put in `./assets/images/`
 fillImage = "1270x740 Center" # normalize image size
 
 # Footer
-footer = "<span class=\"text-muted\">Copyright © 2021 HarmonyCloud All rights reserved.</span>"
+footer = "<div class=\"footer_text\">Copyright © 2021 HarmonyCloud All rights reserved.</div><div class=\"footer_text\">浙ICP备17039193号-1</div>"
 
 # Feed
-copyRight = "Copyright © 2021 HarmonyCloud All rights reserved."
+# copyRight = "Copyright © 2021 HarmonyCloud All rights reserved."
 
 # Alert
 alert = true

@@ -10,6 +10,7 @@ html, body {
     src: url(./ABeeZee-Regular.ttf);
 } */
 /* index style */
+
 .index_wrap {
     background-color: rgb(6, 17, 55);
     color: #FFF;
@@ -185,11 +186,16 @@ html, body {
     font-weight: 300;
     cursor: pointer;
     text-decoration: none;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 .read_more_btn:hover {
     border: 1px solid #107af2;
     color: #107af2;
+}
+
+.why_introduce1 .read_more_btn{
+    line-height: 16px;
+    transform: translateY(-3px);
 }
 .divider2 {
     width: 60px;
@@ -386,6 +392,10 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.footer_text {
+    font-size: 12px;
+    text-align: center;
 }
 
 #box{

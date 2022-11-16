@@ -22,7 +22,7 @@
     <main class="why_main1_1">
         <div class="why_main1_2">
             <div class="why_img1_1" id="camera">
-                <video id="camera_video" poster="{{ .Site.BaseURL | absURL }}images/camera1.png" src="{{ .Site.BaseURL | absURL }}videos/jieshao.mov" controls autoplay></video>
+                <video id="camera_video" poster="{{ .Site.BaseURL | absURL }}images/camera1.png" src="http://jump.harmonycloud.cn:18080/video/jieshao.mov" controls autoplay></video>
                 <img src="{{ .Site.BaseURL | absURL }}images/play-circle.png" id="play_icon"/>
                 <img src="{{ .Site.BaseURL | absURL }}images/close.png" id="video-close" class="close-icon" />
             </div>
@@ -30,7 +30,7 @@
                 <div class="page_count1">01</div>
                 <div class="why_title1">
                     Trace Profiling
-                    <a class="read_more_btn" href="{{ .Site.BaseURL | absURL }}docs/usage/enable-trace-profiling/" target="_blank">Read more</a>
+                    <a class="read_more_btn" href="{{ .Site.BaseURL | absURL }}docs/usage/enable-trace-profiling/">Read more</a>
                 </div>
                 <div class="divider2"></div>
                 <ul class="why_introduce1">
@@ -46,11 +46,17 @@
         <div class="why_main1_2">
             <div class="camera_info">
                 <img src="{{ .Site.BaseURL | absURL }}images/camera2.png" width="100%" />
-                <div class="why_introduce1">An example about "Pessimistic Lock": the thread task-2 spends most of its time to wait thread task-1. And also you can see the stack info.</div>
+                <div class="why_introduce1">
+                    <span>An example about "Pessimistic Lock": the thread task-2 spends most of its time to wait thread task-1. And also you can see the stack info.</span>
+                    <a class="read_more_btn" href="{{ .Site.BaseURL | absURL }}docs/use-cases/observe-java-lock">Read more</a>
+                </div>
             </div>
             <div class="camera_info">
                 <img src="{{ .Site.BaseURL | absURL }}images/camera3.png" width="100%" />
-                <div class="why_introduce1">An example about "Thread Starvation": the request waited for some time after the IO started before it was actually executed, indicating that the thread resources were insufficient.</div>
+                <div class="why_introduce1">
+                    An example about "Thread Starvation": the request waited for some time after the IO started before it was actually executed, indicating that the thread resources were insufficient.
+                    <a class="read_more_btn" href="{{ .Site.BaseURL | absURL }}docs/use-cases/observe-java-lock">Read more</a>
+                </div>
             </div>
         </div>
     </main>
