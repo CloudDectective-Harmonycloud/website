@@ -19,24 +19,24 @@ window.onload = function() {
     })
 
     
-    var videoDom = document.getElementById('camera_video');
-    var playDom = document.getElementById('play_icon');
-    playDom.addEventListener('click', function() {
-        videoDom.play();
-    }, false);
-    videoDom.addEventListener('play', function () { //结束
-        // let dom = document.getElementById('camera');
-        // dom.className = 'full-video';
-        playDom.className = 'hide';
-    }, false);
-    videoDom.addEventListener('ended', function () { //结束
-        // let dom = document.getElementById('camera');
-        // dom.className = 'why_img1_1';
-        playDom.className = 'show';
-    }, false);
+    // var videoDom = document.getElementById('camera_video');
+    // var playDom = document.getElementById('play_icon');
+    // playDom.addEventListener('click', function() {
+    //     videoDom.play();
+    // }, false);
+    // videoDom.addEventListener('play', function () { //结束
+    //     // let dom = document.getElementById('camera');
+    //     // dom.className = 'full-video';
+    //     playDom.className = 'hide';
+    // }, false);
+    // videoDom.addEventListener('ended', function () { //结束
+    //     // let dom = document.getElementById('camera');
+    //     // dom.className = 'why_img1_1';
+    //     playDom.className = 'show';
+    // }, false);
 
-    document.getElementById('video-close').addEventListener('click', function() {
-        let dom = document.getElementById('camera');
-        dom.className = 'why_img1_1';
-    }, false)
+    // document.getElementById('video-close').addEventListener('click', function() {
+    //     let dom = document.getElementById('camera');
+    //     dom.className = 'why_img1_1';
+    // }, false)
 }
