@@ -5,8 +5,9 @@
   weight = 10
 
 [[main]]
-  name = "Blog"
-  url = "/blog/"
+  name = "Blogs"
+  url = "/blogs/development/agent-architecture/"
+  identifier = "blogs"
   weight = 20
 
 [[main]]
