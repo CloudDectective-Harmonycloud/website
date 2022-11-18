@@ -213,6 +213,7 @@
     .who_main {
         padding: 0 5%;
         margin-bottom: 0.6rem;
+        opacity: 1 !important;
     }
     .who_main_item {
         width: 5.5rem;
