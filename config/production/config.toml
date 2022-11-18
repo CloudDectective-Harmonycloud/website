@@ -1,2 +1,2 @@
 canonifyURLs = false
-baseURL = "http://jump.harmonycloud.cn:18080/"
+baseURL = "https://kindlingproject.netlify.app/"
