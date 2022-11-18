@@ -11,6 +11,14 @@ html, body {
 } */
 /* index style */
 
+.customer_logo {
+    width: 180px;
+    padding: 0;
+    margin: -4px 0 0;
+}
+.customer_logo img {
+    width: 100%;
+}
 .index_wrap {
     background-color: rgb(6, 17, 55);
     color: #FFF;
