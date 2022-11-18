@@ -10,15 +10,16 @@ window.onload = function() {
         });
     }
     // 鼠标悬浮在contact上时显示二维码
-    document.getElementsByClassName('contact')[0].addEventListener('mouseenter', function() {
-        document.getElementsByClassName('contact_content')[0].style.display = 'block';
-    });
-    // 鼠标离开contact上时不显示二维码
-    document.getElementsByClassName('contact')[0].addEventListener('mouseout', function () {
-        document.getElementsByClassName('contact_content')[0].style.display = 'none';
-    })
+    if (document.getElementsByClassName('contact')) {
+        document.getElementsByClassName('contact')[0].addEventListener('mouseenter', function() {
+            document.getElementsByClassName('contact_content')[0].style.display = 'block';
+        });
+        // 鼠标离开contact上时不显示二维码
+        document.getElementsByClassName('contact')[0].addEventListener('mouseout', function () {
+            document.getElementsByClassName('contact_content')[0].style.display = 'none';
+        });
+    }
 
-    
     // var videoDom = document.getElementById('camera_video');
     // var playDom = document.getElementById('play_icon');
     // playDom.addEventListener('click', function() {
