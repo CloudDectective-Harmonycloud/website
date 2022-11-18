@@ -57,46 +57,47 @@
         margin: 0 auto;
     }
     .divider {
-        width: 0.8rem;
-        margin-bottom: 0.6rem;
+        width: 4.8rem;
+        margin-bottom: 0.5rem;
     }
     .index_text h1 {
-        font-size: 0.64rem;
+        font-size: 1.875rem;
         margin-bottom: 0.2rem;
     }
     .index_text h2 {
-        font-size: 0.36rem;
+        font-size: 1.05rem;
         width: fit-content;
         text-align: center;
-        margin-bottom: 0.3rem;
+        margin-bottom: 0.2rem;
     }
     .index_text h3 {
-        font-size: 0.28rem;
+        font-size: 0.85rem;
         width: fit-content;
         white-space: break-spaces;
         text-align: center;
         padding: 0 20%;
-        line-height: 0.48rem;
-        margin-bottom: 0.3rem;
+        line-height: 1.25rem;
+        margin: 0.5rem 0 0.8rem;
     }
     .get_started {
         width: 90%;
-        font-size: 0.36rem;
-        line-height: 0.80rem;
-        height: 0.80rem;
+        font-size: 1.25rem;
+        line-height: 2.50rem;
+        height: 2.5rem;
     }
-    .dmoe_btn {
+    .demo_btn {
         width: 90%;
-        font-size: 0.36rem;
-        line-height: 0.80rem;
-        height: 0.80rem;
-        margin-top: 0.5rem;
+        font-size: 1.25rem;
+        line-height: 2.50rem;
+        height: 2.5rem;
+        margin: 0.8rem 0;
     }
     /* RootCause Triage style */
     .why_header {
         /* font-size: 0.64rem; */
         font-size: 8.6vw;
         margin: 1rem 0 0.6rem 0;
+        padding: 20px 0;
     }
     .why_main1 {
         flex-direction: column;
@@ -104,25 +105,34 @@
     }
     .why_content1 {
         width: 90%;
-        margin: auto;
+        margin: 2rem auto 0;
+        opacity: 1 !important;
     }
     .page_count1, .page_count2, .page_count3 {
-        font-size: 1rem;
+        font-size: 3rem;
     }
     .why_title1 {
         /* font-size: 0.36rem; */
         font-size: 4.8vw;
-        margin-top: 0.6rem;
+        margin-top: 2.4rem;
     }
+    .divider2 {
+        margin: 0.2rem 0 1rem;
+    }
+
     .why_introduce1 {
-        font-size: 0.24rem;
-        line-height: 0.48rem;
-        margin-bottom: 0.3rem;
+        font-size: 0.85rem;
+        line-height: 1.25rem;
+        margin-bottom: 0.2rem;
     }
     .why_main1_1 {
         display: flex;
         flex-direction: column;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
+        padding-bottom: 20px;
+    }
+    .why_wrap1_2 {
+        padding: 60px 0 30px 0;
     }
     .why_main1_2 {
         display: flex;
@@ -135,7 +145,7 @@
     .why_img1_1 {
         width: 90%;
         margin: auto;
-        padding-top: 50px;
+        padding-top: 20px;
     }
     .why_img1_1 .close-icon{
         display: none;
@@ -161,14 +171,15 @@
     .why_content2 {
         width: 90%;
         margin-top: 0.6rem auto;
+        opacity: 1 !important;
     }
     .why_title2 {
         font-size: 4.8vw;
-        margin-top: 0.6rem;
+        margin-top: 2.4rem;
     }
     .why_introduce2 {
-        font-size: 0.24rem;
-        line-height: 0.48rem;
+        font-size: 0.85rem;
+        line-height: 1.48rem;
     }
     .why_img2 {
         width: 90%;
@@ -181,12 +192,12 @@
     }
     .why_title3 {
         font-size: 4.8vw;
-        margin-top: 0.6rem;
+        margin-top: 2.4rem;
         width: 90%;
     }
     .why_introduce3 {
-        font-size: 0.24rem;
-        line-height: 0.48rem;
+        font-size: 0.85rem;
+        line-height: 1.48rem;
     }
     /* Open-source */
     .why_wrap4 {
@@ -196,19 +207,21 @@
     .who_header {
         font-size: 8.6vw;
         margin: 1rem 0 0.6rem 0;
+        opacity: 1 !important;
+        padding: 1rem 0;
     }
     .who_main {
         padding: 0 5%;
         margin-bottom: 0.6rem;
     }
     .who_main_item {
-        width: 2.5rem;
-        height: 1rem;
+        width: 5.5rem;
+        height: 4rem;
         margin: 0.2rem;
     }
     .footer {
-        font-size: 0.22rem;
-        line-height: 0.40rem;
+        font-size: 0.85rem;
+        line-height: 1.2rem;
         padding: 0.25rem;
         height: auto;
     }
