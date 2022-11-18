@@ -61,8 +61,8 @@ footer = "<div class=\"footer_text\">Copyright © 2021 HarmonyCloud All rights r
 
 # Alert
 alert = true
-alertDismissable = false
-alertText = "A new highlight feature \"Trace Profiling\" has been released! <a class=\"alert-link stretched-link\" href=\"/docs/usage/enable-trace-profiling\">Check out the Docs</a>"
+alertDismissable = true
+alertText = "A new highlight feature \"Trace Profiling\" has been released! <a class=\"alert-link stretched-link\" href=\"/docs/usage/enable-trace-profiling\">See the Docs</a>"
 
 # Edit Page
 # repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
