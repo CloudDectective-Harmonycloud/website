@@ -13,8 +13,8 @@ html, body {
 
 .customer_logo {
     width: 180px;
-    padding: 0;
-    margin: -4px 0 0;
+    display: flex;
+    align-items: center;
 }
 .customer_logo img {
     width: 100%;
