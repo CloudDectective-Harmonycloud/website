@@ -64,7 +64,7 @@ The product of this step is an image. Please ensure that the image can be access
 3. Finally, modify the image name of Kindling Agent.
 
 ```bash
-kubectl set image ds/kindling-agent kindling-agent=kindlingproject/kindling-probe:bymyself -n kindling
+kubectl set image ds/kindling-agent kindling-agent=kindlingproject/kindling-agent:bymyself -n kindling
 ```
 
 ### Error: Prometheus cannot match error
