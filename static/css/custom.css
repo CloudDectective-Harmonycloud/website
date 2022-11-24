@@ -244,9 +244,9 @@ html, body {
 .why_img1_1 img{
     margin-left: -15px;
 }
-.why_img1_1 video{
+.why_img1_1 .video-iframe{
     width: 95%;
-    border-radius: 10px;
+    height: 100%;
 }
 .why_img1_1 .close-icon{
     display: none;
