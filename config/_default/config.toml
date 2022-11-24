@@ -84,4 +84,4 @@ rel  = "sitemap"
 
 [params]
   customCSS = ['css/custom.css', 'css/mobileCustom.css']
-  customjs = ['js/jquery-3.6.1.min.js', 'js/carousel.js', 'js/flowup.js']
+  customjs = []
