@@ -12,7 +12,7 @@ Before building the website, please ensure you have installed the following depe
 ### Build
 1. Clone this repository.
 ```
-git clone https://github.com/CloudDectective-Harmonycloud/website.git
+git clone https://github.com/kindlingproject/website.git
 ```
 2. Install dependencies
 ```

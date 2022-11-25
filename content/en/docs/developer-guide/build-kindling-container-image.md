@@ -42,7 +42,7 @@ cp kindling-falcolib-probe.tar.gz kindling/collector/docker/
 ## Build kindling-agent itself
 
 ```bash
-git clone https://github.com/CloudDectective-Harmonycloud/kindling.git
+git clone https://github.com/kindlingproject/kindling.git
 cd kindling/deploy/scripts
 chmod +x build.sh
 # start compile container for binaries

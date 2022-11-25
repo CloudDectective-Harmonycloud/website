@@ -28,7 +28,7 @@ After you have installed the agent successfully, the function is disabled by def
 
 > **Notice**
 >
-> After enabling this function, all Java applications on the host node will be automatically installed with a kindling-java agent. The agent is used to make SkyWalking work together with Kindling and attach the async-profiler to your applications. See more details about the kindling-java agent [here](https://github.com/CloudDectective-Harmonycloud/kindling-java).
+> After enabling this function, all Java applications on the host node will be automatically installed with a kindling-java agent. The agent is used to make SkyWalking work together with Kindling and attach the async-profiler to your applications. See more details about the kindling-java agent [here](https://github.com/kindlingproject/kindling-java).
 
 > ⚠️**WARNING**
 > 

@@ -20,12 +20,12 @@ docsVersion = "0.5.0"
 schemaType = "Organization"
 schemaName = "Kindling"
 schemaAuthor = "The Kindling Authors"
-schemaAuthorGitHub = "https://github.com/CloudDectective-Harmonycloud/"
+schemaAuthorGitHub = "https://github.com/kindlingproject/"
 schemaLocale = "zh-CN"
 schemaLogo = "kindling-logo.png"
 schemaLogoWidth = 512
 schemaLogoHeight = 512
-schemaGitHub = "https://github.com/CloudDectective-Harmonycloud/kindling"
+schemaGitHub = "https://github.com/kindlingproject/kindling"
 schemaSection = "blog"
 
 ## Sitelinks Search Box
@@ -67,7 +67,7 @@ alertText = "A new highlight feature \"Trace Profiling\" has been released! <a c
 # Edit Page
 # repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
 repoHost = "GitHub"
-docsRepo = "https://github.com/CloudDectective-Harmonycloud/website"
+docsRepo = "https://github.com/kindlingproject/website"
 docsRepoBranch = "main"
 docsRepoSubPath = ""
 editPage = true
