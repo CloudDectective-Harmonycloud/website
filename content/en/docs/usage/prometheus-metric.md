@@ -10,7 +10,7 @@ menu:
   docs:
     parent: "usage"
     identifier: "prometheus-metric-f7f78f1e5cf823211910b9fa9bd7fbc0"
-weight: 999
+weight: 100
 toc: true
 ---
 
