@@ -10,7 +10,16 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Set up Node.js 16.x
+      uses: actions/setup-node@v2
+      with:
+        node-version: 16.x
+
+      - name: Build
+        run: npm install && npm run build
+
       - name: Link Checker
+        working-directory: ./public
         uses: lycheeverse/lychee-action@v1.5.4
         with:
           fail: true
