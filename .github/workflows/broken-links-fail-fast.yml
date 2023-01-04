@@ -19,9 +19,9 @@ jobs:
         run: npm install && npm run build
 
       - name: Link Checker
-        working-directory: ./public
         uses: lycheeverse/lychee-action@v1.5.4
         with:
           fail: true
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        working-directory: ./public
