@@ -2,3 +2,7 @@
 {{ range .Site.Params.customcss }}
     <link rel="stylesheet" href="{{ . | absURL }}">
 {{- end }}
+
+{{ range $elem := .Site.Params.customjscssraw }}
+    {{ $elem | safeHTML }}
+{{- end }}
