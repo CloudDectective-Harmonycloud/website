@@ -27,7 +27,7 @@
   name = "Use Cases"
   weight = 60
   identifier = "use-cases"
-  url = "/docs/Use Cases/"
+  url = "/blogs/use-cases/trace-profiling-menu/introduction-menu/"
 
 [[main]]
   name = "Demo"
