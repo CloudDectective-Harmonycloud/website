@@ -16,7 +16,7 @@ toc: true
 ## The Role of the Kindling Agent
 Currently, there is a lot of tools which can track kernel events partially.
 
-- [tracee](https://github.com/aquasecurity/tracee/tree/main/tracee-ebpf) is part of tracee security project which can capture the kernel events open-sourced by Aqua.
+- [tracee](https://github.com/aquasecurity/tracee) is part of tracee security project which can capture the kernel events open-sourced by Aqua.
 - [BCC](https://github.com/iovisor/bcc) is a tool-set for BPF-based Linux IO analysis, networking, monitoring.
 - [Elkeid](https://github.com/bytedance/Elkeid) is developed with Linux model stack as a kernel events capture tool open-sourced by bytedance.
 - [sysdig](https://github.com/draios/sysdig) is part of Falco security project developed with eBPF and kernel module as a kernel track library open-sourced by Sysdig.
@@ -32,7 +32,7 @@ Sysdig is a great framework which can work in eBPF mode or kernel module mode, a
 ## How the Kindling agent is using sysdig
 Although sysdig is a great framework, but it do have following limitation to be a perfect kernel event system:
 
-- The interface description is not very clear. From our understanding, we need our developers graduated from computer science with operating system knowledge, can know how to leverage the interface without too much traning. Otherwise the learning-cure will block the progress. We want our developers focus on how to correlate the information to build the monitor tool instead of spending their time on learning how to get events from kernel. After we released the codes, who want to build trace tool or security tool can build their tool upon kindling agent. [Tracee](https://github.com/aquasecurity/tracee/tree/main/tracee-ebpf) has listing the interface as we want, we just want kindling agent to be the way tracee function. And if in future, all the kubernetes has been migrated to high linux kernel version, kindling agent probe may be replaced with tracee-ebpf module.
+- The interface description is not very clear. From our understanding, we need our developers graduated from computer science with operating system knowledge, can know how to leverage the interface without too much traning. Otherwise the learning-cure will block the progress. We want our developers focus on how to correlate the information to build the monitor tool instead of spending their time on learning how to get events from kernel. After we released the codes, who want to build trace tool or security tool can build their tool upon kindling agent. [Tracee](https://github.com/aquasecurity/tracee) has listing the interface as we want, we just want kindling agent to be the way tracee function. And if in future, all the kubernetes has been migrated to high linux kernel version, kindling agent probe may be replaced with tracee-ebpf module.
 
 - The interface coupling is not very well, all the code need to integrated at very low level api. The developer will be lose their focus when they do the integration work. We want the api usage will be clear and separately.
 - sysdig only support the syscall kernel events, and it doesn't support Kprobe and Uprobe events. For instance, we need uprobe to track the grpc call, so we add the kprobe and uprobe to sysdig framework.
