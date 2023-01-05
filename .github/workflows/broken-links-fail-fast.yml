@@ -22,6 +22,7 @@ jobs:
         uses: lycheeverse/lychee-action@v1.5.4
         with:
           fail: true
+          # Only check the files in 'public'
+          args: --verbose --no-progress './public/**/*.md' './public/**/*.html'
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-        working-directory: ./public
