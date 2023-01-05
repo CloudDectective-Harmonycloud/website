@@ -23,3 +23,6 @@ We define Trace Profiling as a feature that can tell users what happened for eve
 - The code execution flame graph is correlated to the time series where the CPU is busy.
 - The network-related metrics are correlated to the time series where the network syscalls are executing.
 - The file-related metrics are correlated to the time series where the file syscalls are executing.
+
+## More
+Interested? See the [use cases](/blogs/use-cases/trace-profiling-menu/introduction-menu/) and [have a try](/docs/usage/enable-trace-profiling/)!

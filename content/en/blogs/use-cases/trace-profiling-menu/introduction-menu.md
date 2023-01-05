@@ -36,18 +36,18 @@ toc: true
 生产环境常见场景问题排障实例
 
 ##### 2.3.1 CPU耗时异常
-- [CPU不定时飙高怎么排查？](../cpu-irregular-spike/)
+- [CPU不定时飙高怎么排查？](/blogs/use-cases/trace-profiling-menu/cpu-irregular-spike/)
 
 ##### 2.3.2 网络问题
-- [应用与网络问题如何快速定位？](../app-dns-slow/)
+- [应用与网络问题如何快速定位？](/blogs/use-cases/trace-profiling-menu/app-dns-slow/)
 
 ##### 2.3.3 文件IO问题
-- [如何高效排查生产环境文件IO问题？](../file-io-buffer/)
+- [如何高效排查生产环境文件IO问题？](/blogs/use-cases/trace-profiling-menu/file-io-buffer/)
 
 ##### 2.3.4 多线程问题
-- [如何快速排查生产环境多线程问题？](../thread-pool-log/)
+- [如何快速排查生产环境多线程问题？](/blogs/use-cases/trace-profiling-menu/thread-pool-log/)
 
 ##### 2.3.5 业务问题
-- [业务问题案例：通过报文判断生产环境Spring事务是否生效](../mysql-commit/)
+- [业务问题案例：通过报文判断生产环境Spring事务是否生效](/blogs/use-cases/trace-profiling-menu/mysql-commit/)
 
 

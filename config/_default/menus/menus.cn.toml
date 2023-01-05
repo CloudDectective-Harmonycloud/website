@@ -26,13 +26,26 @@
   name = "使用案例"
   weight = 60
   identifier = "use-cases"
-  url = "/docs/Use Cases/"
+  url = "/blogs/use-cases/trace-profiling-menu/introduction-menu/"
 
 [[main]]
   name = "Demo"
   weight = 80
   identifier = "onlinedemo"
+
+# [[main]]
+#   name = "Trace Profiling"
+#   weight = 5
+#   identifier = "trace-profiling-demo"
+#   url = "http://218.75.39.90:9504"
+#   parent = "onlinedemo"
+
+[[main]]
+  name = "Grafana Dashboard"
+  weight = 10
+  identifier = "grafana-demo"
   url = "http://218.75.39.90:30010"
+  parent = "onlinedemo"
 
 [[social]]
   name = "GitHub"

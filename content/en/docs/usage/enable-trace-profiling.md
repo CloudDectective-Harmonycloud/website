@@ -23,7 +23,7 @@ toc: true
 After you have installed the agent successfully, the function is disabled by default, and you need to manually enable it following the instructions:
 
 1. Determine the IP of the host node where you want to enable the function to profile the processes.
-2. The agent on each node will start a front-end web, which listens the port 9504 by default. Visit http://IP:9504 to open the page.
+2. The agent on each node will start a front-end web, which listens the port 9504 by default. Visit `http://{YOUR_IP}:9504` to open the page.
 3. Click "Start Trace Detection" in the upper right corner. The startup process may last for 5 to 10 seconds. After the opening is successful, the button in the upper right corner will be turned on.
 
 > **Notice**
@@ -38,4 +38,4 @@ After you have installed the agent successfully, the function is disabled by def
 5. Click the upper filter box to filter the profile results to be viewed.
 
 ## Use cases
-See the use cases on [Use Cases](/docs/usage). We appreciate any new cases from you. Please feel free to open an issue if you want to contribute your cases to the community. 
+See the use cases on [Use Cases](/blogs/use-cases/trace-profiling-menu/introduction-menu/). We appreciate any new cases from you. Please feel free to open an issue if you want to contribute your cases to the community. 
