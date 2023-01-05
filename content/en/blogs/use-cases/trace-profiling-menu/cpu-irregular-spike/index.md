@@ -35,19 +35,31 @@ toc: true
 
 点击Span展开，查看对应的详细信息，通过线程事件详情来分析CPU异常原因。<br />![image.png](3.png)<br />我们可以看到，本次Trace的执行主线程花了大部分时间在做running（及cpu逻辑计算）事件，点击running事件，可查看堆栈信息。堆栈显示，这是系统在执行JSON.toJSON操作，从这里我们可以推断出，本次Trace是因为执行了大对象的序列化操作，导致CPU耗时异常。
 
+#### 2.4 案例demo在线演示地址
+
+Fastjson框架测试请求：
+http://218.75.39.90:9504/#/thread?folder=Demo_Demo-69579c8597-xpw9k_javedemo_24355&file=http_L1VzZXJDYXNlTmV3L3F1ZXJ5QmlnUmVzdWx0_1672887117564186216_true
+
 <a name="gPgT1"></a>
 ### 3. 精准还原执行现场，10分钟黄金时间排障
 生产环境的场景远比本次案例复杂的多，它的运行过程像个黑盒子，程序摄像头Trace Profiling能够监测记录所有系统内核调用事件、且与metric数据整合，为我们打开了“黑盒子”。以此实现10分钟黄金时间快速排障，通过线程按时间轴执行事件的方式精准还原请求执行现场，降低排障门槛，降低对专家经验的依赖。
 <a name="fVzbM"></a>
 ### 4. 序列化知识点拓展
-对象序列化、反序列化是开发的超高频操作，但是很多小伙伴可能不知道，这是很费CPU的操作。而常见的Jackson、fastjson、Gson、net.sf.json这4中序列化框架性能相差很大，尤其是序列化对象很大的时候，在生产环境就容易引起CPU飙高，但持续时间又很短，难以捕捉的情况。<br />上面的demo中我们用的是Fastjson框架，我们再用Trace Profiling来捕捉记录一下其他3种序列化框架的测试请求对比看下：<br />![image.png](4.png)
+对象序列化、反序列化是开发的超高频操作，但是很多小伙伴可能不知道，这是很费CPU的操作。而常见的Jackson、fastjson、Gson、net.sf.json这4中序列化框架性能相差很大，尤其是序列化对象很大的时候，在生产环境就容易引起CPU飙高，但持续时间又很短，难以捕捉的情况。<br />上面的demo中我们用的是Fastjson框架，我们再用Trace Profiling来捕捉记录一下其他3种序列化框架的测试请求对比看下：<br />
 <a name="UrmPH"></a>
 #### 4.1 Jackson 1.21s
+在线演示地址：http://218.75.39.90:9504/#/thread?folder=Demo_Demo-69579c8597-xpw9k_javedemo_24355&file=http_L1VzZXJDYXNlTmV3L3F1ZXJ5QmlnUmVzdWx0_1672887119685860683_true
+
 ![image.png](5.png)
 <a name="cDzJh"></a>
 #### 4.2 Gson 2.61s
+
+在线演示地址：http://218.75.39.90:9504/#/thread?folder=Demo_Demo-69579c8597-xpw9k_javedemo_24355&file=http_L1VzZXJDYXNlTmV3L3F1ZXJ5QmlnUmVzdWx0_1672887122006787404_true
+
 ![image.png](6.png)
 <a name="LjuWi"></a>
 #### 4.3 net.sf.json 2.96s
+
+在线演示地址：http://218.75.39.90:9504/#/thread?folder=Demo_Demo-69579c8597-xpw9k_javedemo_24355&file=http_L1VzZXJDYXNlTmV3L3F1ZXJ5QmlnUmVzdWx0_1672887125255336776_true
 ![image.png](7.png)<br />我们可以看到，4种序列化框架工具效率相差很大，相对其他排障工具，程序摄像头Trace Profiling“更人性化”地帮你捕捉了高CPU耗时的堆栈信息。
 

@@ -35,14 +35,19 @@ toc: true
 
 本次工作线程做了两次对数据库的net请求，点击第一次，可以看到报文信息，显示我们代码里确实设置了Transaction事务。<br />![image.png](3.png)<br />接着，线程做了第二个net事件，是执行了插入sql，在此之后，工作线程没有再发起sql相关的net请求。<br />由此，我们可以明确，本次请求，没有执行事务回滚。<br />![image.png](4.png)
 
+#### 2.4 事务失效demo在线演示地址
+http://218.75.39.90:9504/#/thread?query=es&pid=24355&stime=1672888787128&etime=1672888788128&protocl=http
 <a name="C5VUQ"></a>
-#### 2.4 事务生效场景示例
+#### 2.5 事务生效场景示例
 便于大家比对，我们同样用程序摄像头Trace Profiling捕捉了事务生效时的请求记录
+
+##### 2.5.1 事务生效demo在线演示地址
+http://218.75.39.90:9504/#/thread?query=es&pid=24355&stime=1672888797141&etime=1672888798141&protocl=http
 <a name="NJ6db"></a>
-##### 2.4.1 请求span分析
+##### 2.5.2 请求span分析
 ![image.png](5.png)<br />事务生效时，我们明显从trace的span信息中看到，在execute之后，调用了rollback方法。
 <a name="q8Iwd"></a>
-##### 2.4.2 请求执行线程事件分析
+##### 2.5.3 请求执行线程事件分析
 ![image.png](6.png)<br />我们可以看到，相对上一个事务失效的测试请求，这上面多了3个net事件，我们点击查看具体的请求报文，看看它们做了什么事情：<br />![image.png](7.png)<br />![image.png](8.png)<br />![image.png](9.png)<br />![image.png](10.png)<br />![image.png](11.png)<br />我们可以根据事件+报文信息，清楚的看到本次请求的执行过程，明确本次事务成功执行。
 <a name="kHv7p"></a>
 ### 3. 精准还原执行现场，10分钟黄金时间排障
