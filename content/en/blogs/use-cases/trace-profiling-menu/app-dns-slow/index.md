@@ -36,11 +36,9 @@ toc: true
 
 #### 2.4 案例demo在线演示地址
 
-通过域名访问API接口，含DNS解析过程：
-http://218.75.39.90:9504/#/thread?query=es&pid=24355&stime=1672889213933&etime=1672889214933&protocl=http
+[通过域名访问API接口，含DNS解析过程](http://218.75.39.90:9504/#/thread?query=es&pid=24355&stime=1672889213933&etime=1672889214933&protocl=http)
 
-通过IP访问API接口，不含DNS解析过程：
-http://218.75.39.90:9504/#/thread?query=es&pid=28037&stime=1672889415602&etime=1672889416602&protocl=http
+[通过IP访问API接口，不含DNS解析过程](http://218.75.39.90:9504/#/thread?query=es&pid=28037&stime=1672889415602&etime=1672889416602&protocl=http)
 
 <a name="yGSQp"></a>
 ### 3. 精准还原执行现场，10分钟黄金时间排障

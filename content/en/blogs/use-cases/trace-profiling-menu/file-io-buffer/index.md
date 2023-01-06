@@ -34,6 +34,11 @@ toc: true
 我们点击span展开，查看对应的详细信息，通过线程事件详情数据来分析文件IO慢的根因。<br />这个测试请求，是读一个1.07M的文件，但是竟然花了4.07s，通过线程执行事件分析，我们可以看到系统内核做了很多fileRead事件。（网络带宽正常，此类指标数据后期会补充到页面上，目前开源版暂未支持）<br />![image.png](3.png)<br />点击running事件，查看线程堆栈：<br />![image.png](4.png)<br />根据堆栈，我们大致能推断这是系统在将文件数据从内核态拷贝到用户态。<br />到这里我们其实有了大致的推断：带宽等网络指标正常，系统做了大量的fileread事件，再结合计算机基础知识，说明这个文件IO过程没有buffer，或者说buffer空间太小，导致系统需要不断将文件数据从内核态拷贝到用户态。
 
 再给大家对比看一下，正常加了buffer的文件IO过程是怎么样的：读取33.81M的文件，只花了1.89s。<br />![image.png](5.png)<br />加了buffer之后，读取一个大很多文件，但系统内核的fileRead事件做得相对而言更少些，它不需要更多次从内核态读取到用户态，所以这就是加buffer后IO性能更高的根本原因。
+#### 2.4 案例demo在线演示地址
+[加buffer读取文件](http://218.75.39.90:9504/#/thread?folder=Demo_Demo-69579c8597-xpw9k_javedemo_24355&file=http_L1VzZXJDYXNlTmV3L2ZpbGVJTw==_1672886938363555733_true)
+
+[未加buffer读取文件](http://218.75.39.90:9504/#/thread?folder=Demo_Demo-69579c8597-xpw9k_javedemo_24355&file=http_L1VzZXJDYXNlTmV3L2ZpbGVJTw==_1672886741630534315_true)
+
 <a name="f2890e51"></a>
 ### 3. 精准还原执行现场，10分钟黄金时间排障
 对于文件IO问题，程序摄像头Trace Profiling能够：

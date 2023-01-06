@@ -38,16 +38,45 @@ toc: true
 ##### 2.3.1 CPU耗时异常
 - [CPU不定时飙高怎么排查？](/blogs/use-cases/trace-profiling-menu/cpu-irregular-spike/)
 
+案例demo在线演示地址：
+
+[Fastjson](http://218.75.39.90:9504/#/thread?folder=Demo_Demo-69579c8597-xpw9k_javedemo_24355&file=http_L1VzZXJDYXNlTmV3L3F1ZXJ5QmlnUmVzdWx0_1672887117564186216_true)
+
+[Jackson](http://218.75.39.90:9504/#/thread?folder=Demo_Demo-69579c8597-xpw9k_javedemo_24355&file=http_L1VzZXJDYXNlTmV3L3F1ZXJ5QmlnUmVzdWx0_1672887119685860683_true)
+
+[Gson](http://218.75.39.90:9504/#/thread?folder=Demo_Demo-69579c8597-xpw9k_javedemo_24355&file=http_L1VzZXJDYXNlTmV3L3F1ZXJ5QmlnUmVzdWx0_1672887122006787404_true)
+
+[net.sf.json](http://218.75.39.90:9504/#/thread?folder=Demo_Demo-69579c8597-xpw9k_javedemo_24355&file=http_L1VzZXJDYXNlTmV3L3F1ZXJ5QmlnUmVzdWx0_1672887125255336776_true)
+
+
 ##### 2.3.2 网络问题
 - [应用与网络问题如何快速定位？](/blogs/use-cases/trace-profiling-menu/app-dns-slow/)
 
+案例demo在线演示地址：
+
+[通过域名访问API接口，含DNS解析过程](http://218.75.39.90:9504/#/thread?query=es&pid=24355&stime=1672889213933&etime=1672889214933&protocl=http)
+
+[通过IP访问API接口，不含DNS解析过程](http://218.75.39.90:9504/#/thread?query=es&pid=28037&stime=1672889415602&etime=1672889416602&protocl=http)
+
 ##### 2.3.3 文件IO问题
 - [如何高效排查生产环境文件IO问题？](/blogs/use-cases/trace-profiling-menu/file-io-buffer/)
+
+案例demo在线演示地址：
+
+[加buffer读取文件](http://218.75.39.90:9504/#/thread?folder=Demo_Demo-69579c8597-xpw9k_javedemo_24355&file=http_L1VzZXJDYXNlTmV3L2ZpbGVJTw==_1672886938363555733_true)
+
+[未加buffer读取文件](http://218.75.39.90:9504/#/thread?folder=Demo_Demo-69579c8597-xpw9k_javedemo_24355&file=http_L1VzZXJDYXNlTmV3L2ZpbGVJTw==_1672886741630534315_true)
 
 ##### 2.3.4 多线程问题
 - [如何快速排查生产环境多线程问题？](/blogs/use-cases/trace-profiling-menu/thread-pool-log/)
 
 ##### 2.3.5 业务问题
 - [业务问题案例：通过报文判断生产环境Spring事务是否生效](/blogs/use-cases/trace-profiling-menu/mysql-commit/)
+
+案例demo在线演示地址：
+
+[事务失效](http://218.75.39.90:9504/#/thread?query=es&pid=24355&stime=1672888787128&etime=1672888788128&protocl=http)
+
+[事务生效](http://218.75.39.90:9504/#/thread?query=es&pid=24355&stime=1672888797141&etime=1672888798141&protocl=http)
 
 
