@@ -6,21 +6,21 @@
 
 [[main]]
   name = "博客"
-  url = "/blog/"
+  url = "/blogs/use-cases/trace-profiling-menu/introduction-menu/"
   weight = 20
 
 [[main]]
   name = "开始使用"
   weight = 30
   identifier = "get-started"
-  url = "/docs/overview-and-concepts/overview/"
-
-[[main]]
-  name = "安装"
-  weight = 40
-  identifier = "quick-start"
   url = "/docs/installation/kindling-agent/requirements/"
-  parent = "get-started"
+
+# [[main]]
+#   name = "安装"
+#   weight = 40
+#   identifier = "quick-start"
+#   url = "/docs/installation/kindling-agent/requirements/"
+#   parent = "get-started"
 
 [[main]]
   name = "使用案例"
