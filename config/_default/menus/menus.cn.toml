@@ -6,7 +6,7 @@
 
 [[main]]
   name = "博客"
-  url = "/blog/"
+  url = "/blogs/use-cases/trace-profiling-menu/introduction-menu/"
   weight = 20
 
 [[main]]

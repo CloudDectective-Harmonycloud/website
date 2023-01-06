@@ -6,7 +6,7 @@
 
 [[main]]
   name = "Blogs"
-  url = "/blogs/development/agent-architecture/"
+  url = "/blogs/use-cases/trace-profiling-menu/introduction-menu/"
   identifier = "blogs"
   weight = 20
 
