@@ -23,6 +23,9 @@ toc: true
 3. 用jstack获取对应线程的堆栈信息，找出耗CPU的代码位置对应修复<br />此举易行，但是这一套操作下来，很花时间，而排查生产环境的故障，效率和速度是关键。此外，假如CPU一会高，一会正常，无法稳定复现又该怎么排查？
 <a name="b13sc"></a>
 ### 2. 程序摄像头Trace Profiling标准化步骤排障
+> 要启用程序摄像头Trace Profiling，请先[安装kindling](http://kindling.harmonycloud.cn/docs/installation/kindling-agent/install-kindling-in-kubernetes/), 
+再[启用Trace Profiling功能](http://kindling.harmonycloud.cn/docs/usage/enable-trace-profiling/)
+ 
 <a name="AIWZP"></a>
 #### 2.1 找关键Trace
 通过Trace系统，结合时间点，找出相关可能存在问题的关键Trace，并在程序摄像头系统上找到需要排查的Trace的profile记录。<br />![image.png](1.png)
@@ -63,3 +66,9 @@ toc: true
 
 ![image.png](7.png)<br />我们可以看到，4种序列化框架工具效率相差很大，相对其他排障工具，程序摄像头Trace Profiling“更人性化”地帮你捕捉了高CPU耗时的堆栈信息。
 
+
+### 5. 关于程序摄像头 Trace Profiling
+
+[官网地址](http://kindling.harmonycloud.cn/)
+
+[GitHub](https://github.com/kindlingproject/kindling)

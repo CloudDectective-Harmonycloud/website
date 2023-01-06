@@ -25,6 +25,7 @@ toc: true
 
 #### 2.1 程序摄像头Trace Profiling的标准化步骤排障
 
+
 1. 找：通过Trace系统，结合时间点，找出相关可能存在问题的关键Trace
 2. 查：通过关键Trace，查询其对应的Span信息
 3. 分析：分析Span信息中的何种指标与预期不符
@@ -39,7 +40,7 @@ toc: true
 - [CPU不定时飙高怎么排查？](/blogs/use-cases/trace-profiling-menu/cpu-irregular-spike/)
 
 案例demo在线演示地址：
-
+ 
 [Fastjson](http://218.75.39.90:9504/#/thread?folder=Demo_Demo-69579c8597-xpw9k_javedemo_24355&file=http_L1VzZXJDYXNlTmV3L3F1ZXJ5QmlnUmVzdWx0_1672887117564186216_true)
 
 [Jackson](http://218.75.39.90:9504/#/thread?folder=Demo_Demo-69579c8597-xpw9k_javedemo_24355&file=http_L1VzZXJDYXNlTmV3L3F1ZXJ5QmlnUmVzdWx0_1672887119685860683_true)
@@ -79,4 +80,10 @@ toc: true
 
 [事务生效](http://218.75.39.90:9504/#/thread?query=es&pid=24355&stime=1672888797141&etime=1672888798141&protocl=http)
 
+
+### 2.4 关于程序摄像头 Trace Profiling
+
+[官网地址](http://kindling.harmonycloud.cn/)
+
+[GitHub](https://github.com/kindlingproject/kindling)
 

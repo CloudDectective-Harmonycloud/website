@@ -22,6 +22,11 @@ toc: true
 而我们本次事务失效的案例，无法通过打日志买点的方式判断Spring事务是否生效，而且事务失效一般都是在对账或出现用户投诉的时候才被发现，经常会造成生产脏数据，清洗数据费时费力，如何实现快速排查？
 <a name="HNiQy"></a>
 ### 2. 程序摄像头Trace Profiling标准化步骤排障
+
+> 要启用程序摄像头Trace Profiling，请先[安装kindling](http://kindling.harmonycloud.cn/docs/installation/kindling-agent/install-kindling-in-kubernetes/), 
+再[启用Trace Profiling功能](http://kindling.harmonycloud.cn/docs/usage/enable-trace-profiling/)
+ 
+ 
 <a name="GvUem"></a>
 #### 2.1 找关键Trace
 通过Trace系统，结合时间点，找出相关可能存在问题的关键Trace，并在程序摄像头系统上找到需要排查的Trace的profile记录。<br />![image.png](1.png)
@@ -84,3 +89,9 @@ public void createUser(String name) {
     studentMapper.insert(studentDO);
 }
 ```
+
+### 5. 关于程序摄像头 Trace Profiling
+
+[官网地址](http://kindling.harmonycloud.cn/)
+
+[GitHub](https://github.com/kindlingproject/kindling)

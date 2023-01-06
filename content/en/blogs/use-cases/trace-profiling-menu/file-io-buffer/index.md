@@ -20,6 +20,8 @@ toc: true
 - 依赖经验：文件的读写代码，很多开发都是ctrl C & ctrl V 借鉴过来的，很容易忽视文件IO原理，这就可能对性能造成很大影响，需要依赖资深开发的经验。
 <a name="E5g2U"></a>
 ### 2. 程序摄像头Trace Profiling标准化步骤排障
+> 要启用程序摄像头Trace Profiling，请先[安装kindling](http://kindling.harmonycloud.cn/docs/installation/kindling-agent/install-kindling-in-kubernetes/), 
+再[启用Trace Profiling功能](http://kindling.harmonycloud.cn/docs/usage/enable-trace-profiling/)
 <a name="TyIlm"></a>
 #### 2.1 找关键Trace
 通过Trace系统，结合时间点，找出相关可能存在问题的关键Trace，并在程序摄像头系统上找到需要排查的Trace的profile记录。<br />![image.png](1.png)
@@ -47,3 +49,9 @@ toc: true
 - 捕捉在文件读写时，系统内核的调用事件，展示文件IO的原理过程
 
 生产环境的场景远比本次案例复杂的多，它的运行过程像个黑盒子，程序摄像头Trace Profiling能够监测记录所有系统内核调用事件、且与metric数据整合，为我们打开了“黑盒子”。以此实现10分钟黄金时间快速排障，通过线程按时间轴执行事件的方式精准还原请求执行现场，降低排障门槛，降低对专家经验的依赖。
+
+### 4. 关于程序摄像头 Trace Profiling
+
+[官网地址](http://kindling.harmonycloud.cn/)
+
+[GitHub](https://github.com/kindlingproject/kindling)
