@@ -21,8 +21,8 @@ toc: true
 <a name="E5g2U"></a>
 ### 2. 程序摄像头Trace Profiling标准化步骤排障
 
-> 要启用程序摄像头Trace Profiling，请先[安装kindling](/Users/gongrihong/Documents/code/website2/content/cn/docs/installation/kindling-agent/install-kindling-in-kubernetes.md), 
-再[启用Trace Profiling功能](/Users/gongrihong/Documents/code/website2/content/en/docs/usage/enable-trace-profiling.md)
+> 要启用程序摄像头Trace Profiling，请先[安装kindling](/docs/installation/kindling-agent/install-kindling-in-kubernetes/), 
+再[启用Trace Profiling功能](/docs/usage/enable-trace-profiling/)
  
 <a name="TyIlm"></a>
 #### 2.1 找关键Trace
