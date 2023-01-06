@@ -34,12 +34,12 @@
   weight = 80
   identifier = "onlinedemo"
 
-# [[main]]
-#   name = "Trace Profiling"
-#   weight = 5
-#   identifier = "trace-profiling-demo"
-#   url = "http://218.75.39.90:9504"
-#   parent = "onlinedemo"
+[[main]]
+  name = "Trace Profiling"
+  weight = 5
+  identifier = "trace-profiling-demo"
+  url = "http://218.75.39.90:9504"
+  parent = "onlinedemo"
 
 [[main]]
   name = "Grafana Dashboard"
