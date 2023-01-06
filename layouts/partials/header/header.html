@@ -64,18 +64,18 @@
                   {{ range .Children -}}
                   {{- $active = eq .Name $current.Title -}}
                     <li>
-                      <a class="dropdown-item{{ if $active }} active{{ end }}" href="{{ .URL | relLangURL }}"{{ if $active }} aria-current="true"{{ end }}>{{ .Name }}</a>
+                      {{ if (eq .Parent "onlinedemo")}}
+                        <a class="dropdown-item{{ if $active }} active{{ end }}" href="{{ .URL | relLangURL }}"{{ if $active }} aria-current="true"{{ end }} target="_blank">{{ .Name }}</a>
+                      {{ else }}
+                        <a class="dropdown-item{{ if $active }} active{{ end }}" href="{{ .URL | relLangURL }}"{{ if $active }} aria-current="true"{{ end }}>{{ .Name }}</a>
+                      {{ end }}
                     </li>
                   {{ end -}}
                 </ul>
               </li>
             {{ else }}
               <li class="nav-item">
-                {{ if (eq .Name "Demo")}}
-                  <a class="nav-link ps-0 py-1{{ if $active }} active{{ end }}" href="{{ .URL | relLangURL }}" target="_blank">{{ .Name }}</a>
-                {{ else }}
-                  <a class="nav-link ps-0 py-1{{ if $active }} active{{ end }}" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
-                {{ end }}
+                <a class="nav-link ps-0 py-1{{ if $active }} active{{ end }}" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
               </li>
             {{ end }}
           {{ end -}}
