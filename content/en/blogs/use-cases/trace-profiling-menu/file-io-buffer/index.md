@@ -20,8 +20,10 @@ toc: true
 - 依赖经验：文件的读写代码，很多开发都是ctrl C & ctrl V 借鉴过来的，很容易忽视文件IO原理，这就可能对性能造成很大影响，需要依赖资深开发的经验。
 <a name="E5g2U"></a>
 ### 2. 程序摄像头Trace Profiling标准化步骤排障
-> 要启用程序摄像头Trace Profiling，请先[安装kindling](http://kindling.harmonycloud.cn/docs/installation/kindling-agent/install-kindling-in-kubernetes/), 
-再[启用Trace Profiling功能](http://kindling.harmonycloud.cn/docs/usage/enable-trace-profiling/)
+
+> 要启用程序摄像头Trace Profiling，请先[安装kindling](/Users/gongrihong/Documents/code/website2/content/cn/docs/installation/kindling-agent/install-kindling-in-kubernetes.md), 
+再[启用Trace Profiling功能](/Users/gongrihong/Documents/code/website2/content/en/docs/usage/enable-trace-profiling.md)
+ 
 <a name="TyIlm"></a>
 #### 2.1 找关键Trace
 通过Trace系统，结合时间点，找出相关可能存在问题的关键Trace，并在程序摄像头系统上找到需要排查的Trace的profile记录。<br />![image.png](1.png)
