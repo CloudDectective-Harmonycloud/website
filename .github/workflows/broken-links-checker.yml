@@ -18,7 +18,9 @@ jobs:
           node-version: 16.x
 
       - name: Build
-        run: npm install && npm run build
+        run: |
+        sed -i 's|'https://kindlingproject.netlify.app/'|'http://kindling.harmonycloud.cn/'|g' ./config/production/config.toml
+        npm install && npm run build
 
       - name: Link Checker
         id: lychee
