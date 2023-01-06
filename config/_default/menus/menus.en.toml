@@ -14,14 +14,14 @@
   name = "Get Started"
   weight = 30
   identifier = "get-started"
-  url = "/docs/overview-and-concepts/overview/"
-
-[[main]]
-  name = "Quick Start"
-  weight = 40
-  identifier = "quick-start"
   url = "/docs/installation/kindling-agent/requirements/"
-  parent = "get-started"
+
+# [[main]]
+#   name = "Quick Start"
+#   weight = 40
+#   identifier = "quick-start"
+#   url = "/docs/installation/kindling-agent/requirements/"
+#   parent = "get-started"
 
 [[main]]
   name = "Use Cases"
