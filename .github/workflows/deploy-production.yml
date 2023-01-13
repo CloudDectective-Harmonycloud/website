@@ -26,7 +26,7 @@ jobs:
           WEBSITE_HOST: ${{ secrets.WEBSITE_HOST }}
         run: |
           # Set the real domain
-          sed -i '' 's|'https://kindlingproject.netlify.app/'|'http://kindling.harmonycloud.cn/'|g' config/production/config.toml
+          sed -i 's|'https://kindlingproject.netlify.app/'|'http://kindling.harmonycloud.cn/'|g' config/production/config.toml
           # Build the website
           npm install && npm run build
           # Compress and transfer the tarball
