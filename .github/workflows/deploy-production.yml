@@ -1,0 +1,42 @@
+name: Deployment
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    environment: 
+      name: production
+      url: http://kindling.harmonycloud.cn
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Node.js 16.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+        
+      - uses: webfactory/ssh-agent@v0.7.0
+        with:
+          ssh-private-key: ${{ secrets.WEBSITE_HOST_KEY }}
+      
+      - name: Build and Deploy
+        env: 
+          WEBSITE_HOST: ${{ secrets.WEBSITE_HOST }}
+        run: |
+          # Set the real domain
+          sed -i '' 's|'https://kindlingproject.netlify.app/'|'http://kindling.harmonycloud.cn/'|g' config/production/config.toml
+          # Build the website
+          npm install && npm run build
+          # Compress and transfer the tarball
+          cd public && gtar -cvzf public.tar.gz *
+          scp public.tar.gz kindling-host:/root/apache-tomcat-8.5.35_bk/webapps/
+
+          # Update the website
+          ssh "$WEBSITE_HOST" << eof
+          echo "Removing the old files..."
+          cd /root/apache-tomcat-8.5.35_bk/webapps/ROOT && rm -rf *
+          echo "Deploying the site..."
+          mv ../public.tar.gz . && tar -xvf public.tar.gz
+          eof
