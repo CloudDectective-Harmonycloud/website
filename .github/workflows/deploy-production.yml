@@ -30,8 +30,8 @@ jobs:
           # Build the website
           npm install && npm run build
           # Compress and transfer the tarball
-          cd public && gtar -cvzf public.tar.gz *
-          scp public.tar.gz kindling-host:/root/apache-tomcat-8.5.35_bk/webapps/
+          cd public && tar -cvzf public.tar.gz *
+          scp public.tar.gz "$WEBSITE_HOST":/root/apache-tomcat-8.5.35_bk/webapps/
 
           # Update the website
           ssh "$WEBSITE_HOST" << eof
