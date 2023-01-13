@@ -1,5 +1,5 @@
 ---
-title: "使用Trace Profiling分析Java锁竞争"
+title: "* 使用Trace Profiling分析Java锁竞争"
 description: "使用Trace Profiling分析Java锁竞争"
 lead: ""
 date: 2022-11-10T10:16:39+08:00

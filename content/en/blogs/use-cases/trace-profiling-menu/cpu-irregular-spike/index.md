@@ -1,5 +1,5 @@
 ---
-title: "CPU不定时飙高怎么排查"
+title: "* CPU不定时飙高怎么排查"
 description: ""
 lead: ""
 date: 2023-01-05T10:16:39+08:00
