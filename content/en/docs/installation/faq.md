@@ -15,8 +15,14 @@ toc: false
 ---
 
 - [Error: Precompiled module at /opt/.kindling/ is not found](#error-precompiled-module-at-optkindling-is-not-found)
+  - [Problem description and logs](#problem-description-and-logs)
+  - [Solution](#solution)
 - [Error: Prometheus cannot match error](#error-prometheus-cannot-match-error)
+  - [Problem description and logs](#problem-description-and-logs-1)
+  - [Solution](#solution-1)
 - [kindling probe init err: xxxxxx: Permission denied](#kindling-probe-init-err-xxxxxx-permission-denied)
+  - [Problem description and logs](#problem-description-and-logs-2)
+  - [Solution](#solution-2)
 
 ### Error: Precompiled module at /opt/.kindling/ is not found
 #### Problem description and logs
@@ -59,12 +65,12 @@ Of course, you can also [download RPM files](/docs/installation/download-linux-k
 bash -c "$(curl -fsSL https://k8s-bpf-probes-public.oss-cn-hangzhou.aliyuncs.com/recompile-module.sh)"
 ```
 
-The product of this step is an image. Please ensure that the image can be accessed by the k8s cluster node. Maybe you can upload the image to a private harbor, or compress it and distribute it to each node of the k8s cluster. (You should set the `imagePullPolicy` of kindling-agent to `ifNotPresent` when compress and distribute image.)
+The product of this step is an image. Please ensure that the image can be accessed by the k8s cluster node. Maybe you can upload the image to a private harbor, or compress it and distribute it to each node of the k8s cluster. (You should set the `imagePullPolicy` of kindling-agent to `IfNotPresent` when compress and distribute image.)
 
 3. Finally, modify the image name of Kindling Agent.
 
 ```bash
-kubectl set image ds/kindling-agent kindling-agent=kindlingproject/kindling-agent:bymyself -n kindling
+kubectl set image ds/kindling-agent kindling-agent=kindlingproject/kindling-agent:latest-bymyself -n kindling
 ```
 
 ### Error: Prometheus cannot match error
