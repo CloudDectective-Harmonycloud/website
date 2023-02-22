@@ -1,6 +1,6 @@
 ---
-title: "Trace Profiling 操作手册"
-description: "Trace Profiling 操作手册"
+title: "Trace Profiling 完整视图操作手册"
+description: "Trace Profiling 完整视图操作手册"
 lead: ""
 date: 2022-11-17T16:30:02+08:00
 lastmod: 2022-11-17T16:30:02+08:00
@@ -40,14 +40,16 @@ toc: true
 
 ### 3.3 线程系统调用事件单词说明
 
-
 * futex：线程夯住，或者说在等待
 * on：即cpu-on，即线程在执行CPU计算操作
 * epoll：线程在查询系统内核文件描述符的读写状态
 * net：线程在做网络调用，比如连接访问数据库、调用下游接口、网络监听请求等等操作。
-* netread：线程read网络请求流
-* netwrite：线程write网络请求返回结果流
+* netread：指读取网络数据流（对于客户端来说是在读取响应，对于服务端来说是在读取请求）
+* netwrite: 指写入网络数据流（对于客户端来说是在写入请求，对于服务端来说是在写入响应）
 * lock：线程执行锁操作
+* fileopen: 打开文件
+* fileread: 读取文件
+* filewrite: 写文件
 
 ## 4. 事件详情
 
