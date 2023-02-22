@@ -1,5 +1,5 @@
 ---
-title: "Trace Profiling Manual"
+title: "Complete View Manual Of Trace Profiling"
 description: ""
 lead: ""
 date: 2022-11-17T16:30:02+08:00
