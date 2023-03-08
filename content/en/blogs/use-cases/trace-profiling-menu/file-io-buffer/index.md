@@ -64,9 +64,9 @@ toc: true
 > **未来我们还会构建一个磁盘被竞争，导致fileRead事件很长的场景，大家可以持续关注，程序摄像头Trace Profiling是如何在分钟级内快速排查全资源种类故障的**
 
 #### 2.4 案例demo在线演示地址
-[加buffer读取文件](http://218.75.39.90:9504/#/thread?folder=Demo_Demo-69579c8597-xpw9k_javedemo_24355&file=http_L1VzZXJDYXNlTmV3L2ZpbGVJTw==_1672886938363555733_true)
+[加buffer读取文件](http://218.75.39.90:9504/#/thread?folder=Demo_Demo-69579c8597-9bzbj_javedemo_24666&file=20230303025634.696715096_http_L1VzZXJDYXNlTmV3L2ZpbGVJTw%3D%3D_true)
 
-[未加buffer读取文件](http://218.75.39.90:9504/#/thread?folder=Demo_Demo-69579c8597-xpw9k_javedemo_24355&file=http_L1VzZXJDYXNlTmV3L2ZpbGVJTw==_1672886741630534315_true)
+[未加buffer读取文件](http://218.75.39.90:9504/#/thread?folder=Demo_Demo-69579c8597-9bzbj_javedemo_24666&file=20230303030000.643516677_http_L1VzZXJDYXNlTmV3L2ZpbGVJTw%3D%3D_true)
 
 <a name="f2890e51"></a>
 ### 3. 精准还原执行现场，10分钟黄金时间排障

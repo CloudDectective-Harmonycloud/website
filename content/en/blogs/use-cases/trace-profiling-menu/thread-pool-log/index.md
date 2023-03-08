@@ -38,8 +38,7 @@ toc: true
 我们点击span展开，查看对应的详细信息，通过线程事件详情数据来分析根因。<br />![image.png](3.png)<br />我看可以看到，主线程上除了日志标记、正常执行逻辑计算的running事件，占大部分耗时的是lock事件，我们点击事件查看堆栈：<br />![image.png](4.png)<br />“logback”、“OutputStreamAppender”，大家有想到什么吗？其实这是线程是在等待日志锁。在大量并发场景下，所有的业务日志打在同一个文件里，就出现了资源抢占问题，当某一线程在读写日志的时候，其他线程只能等待，最后导致了请求响应速度不如预期。
 
 #### 2.4 案例demo在线演示地址
-[演示地址](http://218.75.39.90:9504/#/thread?folder=Demo_Demo-69579c8597-xpw9k_javedemo_24355&file=http_L1VzZXJDYXNlTmV3L2xvZ0xvY2s=_1672887050012697307_true
-)
+[演示地址](http://218.75.39.90:9504/#/thread?folder=Demo_Demo-69579c8597-9bzbj_javedemo_24666&file=20230301032944.702834870_http_L1VzZXJDYXNlTmV3L2xvZ0xvY2s%3D_true)
 
 <a name="yGSQp"></a>
 ### 3. 精准还原执行现场，10分钟黄金时间排障

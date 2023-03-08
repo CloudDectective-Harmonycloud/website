@@ -43,9 +43,7 @@ cp kindling-falcolib-probe.tar.gz kindling/collector/docker/
 
 ```bash
 git clone https://github.com/kindlingproject/kindling.git
-cd kindling/deploy/scripts
-chmod +x build.sh
-# start compile container for binaries
+# Run the compiling container to build the binaries
 ./run_docker.sh
 cd deploy/scripts
 sh build.sh
