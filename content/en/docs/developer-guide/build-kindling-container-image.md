@@ -40,11 +40,17 @@ cp kindling-falcolib-probe.tar.gz kindling/collector/docker/
 ```
 
 ## Build kindling-agent itself
-
+1. Build the binaries using the building image
 ```bash
 git clone https://github.com/kindlingproject/kindling.git
-# Run the compiling container to build the binaries
-./run_docker.sh
-cd deploy/scripts
-sh build.sh
+# Run the compiling container
+cd kindling/deploy/scripts/ && sh run_docker.sh
+# Use make to build the binaries
+make
+```
+
+2. Build a runnable image
+```bash
+cd kindling
+docker build -t kindling:latest -f collector/docker/Dockerfile collector/docker/
 ```
