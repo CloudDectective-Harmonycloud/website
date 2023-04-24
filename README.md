@@ -1,4 +1,5 @@
 # The Kindling website
+![Kindling Homepage](https://cronitor.io/badges/PxdIQD/production/W1XiaVM2ctCTdhUS8EPPaTtNGCo.svg)
 
 The Kindling website is powered by [Doks](https://getdoks.org).
 
