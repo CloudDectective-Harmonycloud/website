@@ -10,7 +10,7 @@ type: docs
 menu:
   blogs:
     parent: "use-cases"
-    identifier: "p0-case-368e7c47d3173fbdb48e694ba59489bb"
+    identifier: "optimize-cpu-368e7c47d3173fbdb48e694ba59489bb"
 weight: 050
 toc: true
 
