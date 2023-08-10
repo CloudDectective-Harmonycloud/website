@@ -22,7 +22,7 @@ toc: false
 #### Problem description and logs
 If the kindling pod is not running normally, you can use the following command to check the logs.
 ```bash
-kubectl logs --tail=100 -f kindling-agent-xxxx  -c kindling-probe -n kindling
+kubectl logs --tail=100 -f kindling-agent-xxxx  -c kindling-agent -n kindling
 ```
 
 ```c
