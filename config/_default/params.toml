@@ -45,16 +45,16 @@ smallLimit = "300"
 # Images
 imageResponsive = true
 imageConvertTo = "webp"
-imageImageSizes = ["480","720","1080","1280","1600","2048"]
+imageImageSizes = ["480", "720", "1080", "1280", "1600", "2048"]
 singleSize = false
 imageAddClass = "img-fluid lazyload blur-up"
 
 ### Image template
 defaultImage = "default-image.png" # put in `./assets/images/`
-fillImage = "1270x740 Center" # normalize image size
+fillImage = "1270x740 Center"      # normalize image size
 
 # Footer
-footer = "<div class=\"footer_text\">Copyright © 2021 HarmonyCloud All rights reserved.</div><div class=\"footer_text\">浙ICP备17039193号-1</div>"
+footer = "<div class=\"footer_text\">Copyright © 2023 Kindling All rights reserved.</div>"
 
 # Feed
 # copyRight = "Copyright © 2021 HarmonyCloud All rights reserved."
@@ -74,28 +74,28 @@ editPage = true
 lastMod = true
 
 [sections]
-  sectionNav = ["docs", "blogs"]
+sectionNav = ["docs", "blogs"]
 
 [options]
-  lazySizes = true
-  clipBoard = true
-  instantPage = true
-  flexSearch = true
-  searchSectionsShow = []
-  searchSectionsIndex = []
-  darkMode = true
-  bootStrapJs = true
-  breadCrumb = false
-  highLight = true
-  kaTex = false
-  multilingualMode = false
-  docsVersioning = false
-  fullWidth = true
-  navbarSticky = true
-  toTopButton = false
-  scrollSpy = false # experimental; needs Bootstrap >= 5.2.0-beta1
+lazySizes = true
+clipBoard = true
+instantPage = true
+flexSearch = true
+searchSectionsShow = []
+searchSectionsIndex = []
+darkMode = true
+bootStrapJs = true
+breadCrumb = false
+highLight = true
+kaTex = false
+multilingualMode = false
+docsVersioning = false
+fullWidth = true
+navbarSticky = true
+toTopButton = false
+scrollSpy = false        # experimental; needs Bootstrap >= 5.2.0-beta1
 
 [menu]
-  [menu.section]
-    auto = true
-    collapsibleSidebar = true
+[menu.section]
+auto = true
+collapsibleSidebar = true
