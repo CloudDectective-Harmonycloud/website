@@ -81,6 +81,6 @@ toc: true
 
 ### 6. 关于程序摄像头 Trace Profiling
 
-[官网地址](http://kindling.harmonycloud.cn/)
+[官网地址](http://kindlingx.com/)
 
 [GitHub](https://github.com/kindlingproject/kindling)

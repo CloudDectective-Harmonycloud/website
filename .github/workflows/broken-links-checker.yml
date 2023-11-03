@@ -19,7 +19,7 @@ jobs:
 
       - name: Build
         run: |
-          sed -i 's|'https://kindlingproject.netlify.app/'|'http://kindling.harmonycloud.cn/'|g' ./config/production/config.toml
+          sed -i 's|'https://kindlingproject.netlify.app/'|'http://kindlingx.com/'|g' ./config/production/config.toml
           npm install && npm run build
 
       - name: Link Checker

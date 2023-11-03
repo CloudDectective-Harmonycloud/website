@@ -7,8 +7,8 @@ jobs:
   deployment:
     runs-on: ubuntu-latest
     environment: 
-      name: production
-      url: http://kindling.harmonycloud.cn
+      name: kindlingx
+      url: http://kindlingx.com
     steps:
       - uses: actions/checkout@v3
 
@@ -24,22 +24,23 @@ jobs:
       - name: Build and Deploy
         env: 
           WEBSITE_HOST: ${{ secrets.WEBSITE_HOST }}
+          WEBSITE_PATH: ${{ secrets.WEBSITE_PATH }}
         run: |
           # Set the real domain
-          sed -i 's|'https://kindlingproject.netlify.app/'|'http://kindling.harmonycloud.cn/'|g' config/production/config.toml
+          sed -i 's|'https://kindlingproject.netlify.app/'|'http://kindlingx.com/'|g' config/production/config.toml
           # Build the website
           npm install && npm run build
           # Compress and transfer the tarball
           cd public && tar -cvzf public.tar.gz *
           # Add the host key
-          hostKey='kindling.harmonycloud.cn ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIA0gFwLvWFzonmLl6zCJ/KzSCbUVBFeGynjTUqBH2x0'
+          hostKey='kindlingx.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIfN3rkIrcVwFzs1oRYQ+pmyHmNbRWvikxRl7pRPVL/2'
           echo "$hostKey" >> ~/.ssh/known_hosts
-          scp public.tar.gz "$WEBSITE_HOST":/root/apache-tomcat-8.5.35_bk/webapps/
+          scp public.tar.gz "$WEBSITE_HOST":$WEBSITE_PATH/..
 
           # Update the website
           ssh "$WEBSITE_HOST" << eof
           echo "Removing the old files..."
-          cd /root/apache-tomcat-8.5.35_bk/webapps/ROOT && rm -rf *
+          cd $WEBSITE_PATH && rm -rf *
           echo "Deploying the site..."
           mv ../public.tar.gz . && tar -xvf public.tar.gz
           eof

@@ -103,7 +103,7 @@ You can deploy Kindling easily, check out the [Installation Guide](/docs/install
 
 ## Documentation
 
-The Kindling documentation is available on our [Kindling website](http://kindling.harmonycloud.cn).
+The Kindling documentation is available on our [Kindling website](http://kindlingx.com).
 
 ## Contributing 
 

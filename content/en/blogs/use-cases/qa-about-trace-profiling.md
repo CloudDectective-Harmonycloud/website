@@ -77,7 +77,7 @@ A：请参考安装教程：
 
 项目开源地址：
 
-[官网地址](http://kindling.harmonycloud.cn/)
+[官网地址](http://kindlingx.com/)
 
 [GitHub](https://github.com/kindlingproject/kindling)
 

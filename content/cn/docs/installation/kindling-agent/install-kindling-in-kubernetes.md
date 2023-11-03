@@ -42,8 +42,8 @@ kindling-agent-5zz7v      2/2     Running            0          13h
 kindling-agent-kv9gf      2/2     Running            0          13h
 ```
 
-1. Make sure the status of the pods is running. If a pod does not run, please use `kubectl logs` to view the error messages and check the [**FAQ**](http://kindling.harmonycloud.cn/cn/docs/installation/faq/) first. If you can't fix it by yourself, please feel free to open an issue on Github.
+1. Make sure the status of the pods is running. If a pod does not run, please use `kubectl logs` to view the error messages and check the [**FAQ**](http://kindlingx.com/cn/docs/installation/faq/) first. If you can't fix it by yourself, please feel free to open an issue on Github.
 2. Execute `curl http://localhost:9500/metrics` on the node where Kindling Agent pod is located. You should see many metrics.
 
 ## FAQ
-[click here](http://kindling.harmonycloud.cn/cn/docs/installation/faq/)
+[click here](http://kindlingx.com/cn/docs/installation/faq/)
