@@ -136,5 +136,3 @@ DNS Request Detail主要提供的功能是分析workload的DNS访问可用性以
 ## 其他功能探索
 
 其他功能比如：network detail, DNS detail，因为这些功能的展示方式相对单一，大家可以在在线地址中自行体验。
-
-**在线演示grafana访问地址：http://218.75.39.90:30010**

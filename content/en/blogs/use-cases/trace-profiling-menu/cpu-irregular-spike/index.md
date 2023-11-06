@@ -52,7 +52,7 @@ toc: true
 
 #### 3.4 案例demo在线演示地址
 
-[演示地址](http://218.75.39.90:9504/#/thread?folder=Demo_Demo-69579c8597-9bzbj_javedemo_24666&file=20230303020244.683372477_http_L1VzZXJDYXNlTmV3L3F1ZXJ5QmlnUmVzdWx0_true)
+[演示地址](http://kindlingx.com:9504/#/thread?folder=Demo_Demo-69579c8597-9bzbj_javedemo_24666&file=20230303020244.683372477_http_L1VzZXJDYXNlTmV3L3F1ZXJ5QmlnUmVzdWx0_true)
 
 <a name="gPgT1"></a>
 ### 4. 精准还原执行现场，10分钟黄金时间排障
@@ -62,19 +62,19 @@ toc: true
 对象序列化、反序列化是开发的超高频操作，但是很多小伙伴可能不知道，这是很费CPU的操作。而常见的Jackson、fastjson、Gson、net.sf.json这4中序列化框架性能相差很大，尤其是序列化对象很大的时候，在生产环境就容易引起CPU飙高，但持续时间又很短，难以捕捉的情况。<br />上面的demo中我们用的是Fastjson框架，我们再用Trace Profiling来捕捉记录一下其他3种序列化框架的测试请求对比看下：<br />
 <a name="UrmPH"></a>
 #### 5.1 Jackson 255.29ms
-[演示地址](http://218.75.39.90:9504/#/thread?folder=Demo_Demo-69579c8597-9bzbj_javedemo_24666&file=20230303020319.872203123_http_L1VzZXJDYXNlTmV3L3F1ZXJ5QmlnUmVzdWx0_true)
+[演示地址](http://kindlingx.com:9504/#/thread?folder=Demo_Demo-69579c8597-9bzbj_javedemo_24666&file=20230303020319.872203123_http_L1VzZXJDYXNlTmV3L3F1ZXJ5QmlnUmVzdWx0_true)
 
 ![image.png](5.png)
 <a name="cDzJh"></a>
 #### 5.2 Gson 283.08ms
 
-[演示地址](http://218.75.39.90:9504/#/thread?folder=Demo_Demo-69579c8597-9bzbj_javedemo_24666&file=20230303020336.57066572_http_L1VzZXJDYXNlTmV3L3F1ZXJ5QmlnUmVzdWx0_true)
+[演示地址](http://kindlingx.com:9504/#/thread?folder=Demo_Demo-69579c8597-9bzbj_javedemo_24666&file=20230303020336.57066572_http_L1VzZXJDYXNlTmV3L3F1ZXJ5QmlnUmVzdWx0_true)
 
 ![image.png](6.png)
 <a name="LjuWi"></a>
 #### 5.3 net.sf.json 655.06ms​
 
-[演示地址](http://218.75.39.90:9504/#/thread?folder=Demo_Demo-69579c8597-9bzbj_javedemo_24666&file=20230303020349.999938181_http_L1VzZXJDYXNlTmV3L3F1ZXJ5QmlnUmVzdWx0_true)
+[演示地址](http://kindlingx.com:9504/#/thread?folder=Demo_Demo-69579c8597-9bzbj_javedemo_24666&file=20230303020349.999938181_http_L1VzZXJDYXNlTmV3L3F1ZXJ5QmlnUmVzdWx0_true)
 
 ![image.png](7.png)<br />我们可以看到，4种序列化框架工具效率相差很大，相对其他排障工具，程序摄像头Trace Profiling“更人性化”地帮你捕捉了高CPU耗时的堆栈信息。
 

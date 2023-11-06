@@ -43,9 +43,9 @@ toc: true
 
 #### 2.4 案例demo在线演示地址
 
-[通过域名访问API接口，含DNS解析过程](http://218.75.39.90:9504/#/thread?folder=Demo_Demo-69579c8597-9bzbj_javedemo_24666&file=20230302033757.870217719_http_L1VzZXJDYXNlTmV3L2Ruc1Rlc3Q%3D_true)
+[通过域名访问API接口，含DNS解析过程](http://kindlingx.com:9504/#/thread?folder=Demo_Demo-69579c8597-9bzbj_javedemo_24666&file=20230302033757.870217719_http_L1VzZXJDYXNlTmV3L2Ruc1Rlc3Q%3D_true)
 
-[通过IP访问API接口，不含DNS解析过程](http://218.75.39.90:9504/#/thread?folder=Demo_Demo-69579c8597-9bzbj_javedemo_24666&file=20230302033945.882282241_http_L1VzZXJDYXNlTmV3L2Ruc1Rlc3Q%3D_true)
+[通过IP访问API接口，不含DNS解析过程](http://kindlingx.com:9504/#/thread?folder=Demo_Demo-69579c8597-9bzbj_javedemo_24666&file=20230302033945.882282241_http_L1VzZXJDYXNlTmV3L2Ruc1Rlc3Q%3D_true)
 
 <a name="yGSQp"></a>
 ### 3. 精准还原执行现场，10分钟黄金时间排障
