@@ -69,18 +69,17 @@ toc: true
 - @Transactional注解只能作用在public修饰的方法上。
 - 抛出RuntimeException。
 
-在上述案例中，我们就是通过第二个条件，来控制事务是否生效，demo代码如下，从外部调用createUserWrong()方法时，如果@Transactional是加在createUserWrong()上，事务生效；如果加在createUser()，事务部生效。
+在上述案例中，我们就是通过第二个条件，来控制事务是否生效，demo代码如下，从外部调用createUserWrong()方法时，如果@Transactional是加在createUserWrong()上，事务生效；如果加在createUser()，事务不生效。
 ```java
 @Transactional
 public void createUserWrong(String name) {
-        this.createUser(name);
-
-if (name.contains("test"))
-    throw new RuntimeException("invalid username!");
-
+    this.createUser(name);
+    
+    if (name.contains("test"))
+        throw new RuntimeException("invalid username!");
 }
 
-public void createUser(String name) {
+private void createUser(String name) {
 
     StudentDO studentDO = new StudentDO();
     studentDO.setName(name);
