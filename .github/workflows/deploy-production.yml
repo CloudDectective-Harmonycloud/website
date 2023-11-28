@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: 
       name: kindlingx
-      url: http://kindlingx.com
+      url: https://kindlingx.com
     steps:
       - uses: actions/checkout@v3
 
@@ -29,7 +29,7 @@ jobs:
           WEBSITE_PATH: ${{ secrets.WEBSITE_PATH }}
         run: |
           # Set the real domain
-          sed -i 's|'https://kindlingproject.netlify.app/'|'http://kindlingx.com/'|g' config/production/config.toml
+          sed -i 's|'https://kindlingproject.netlify.app/'|'https://kindlingx.com/'|g' config/production/config.toml
           # Build the website
           npm install && npm run build
           # Compress and transfer the tarball

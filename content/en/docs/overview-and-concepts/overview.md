@@ -36,9 +36,7 @@ So for trace profiling, how all threads were executed is recorded and can be rep
 
 ## Architecture
 
-From a high-level view, the agent runs as DeamonSet in Kubernetes. It collects all syscalls and some other tracepoints. We use different exporters for different distributions. 
-- For the lightweight version, we just build a Prometheus exporter to export the data which can be stored in Prometheus and displayed in Grafana Plugin. But for the trace profiling module, the UI is different, it’s a standalone UI module. 
-- For the standard version, which is designed for heavy usage, Kafka is adopted for buffering the events, and data is stored in ElasticSearch with much more detailed information which can be displayed. Currently, the light version has been open-sourced.
+From a high-level view, the agent runs as DeamonSet in Kubernetes. It collects all syscalls and some other tracepoints. We use different exporters for different distributions. For example, we build a Prometheus exporter to export the data which can be stored in Prometheus and displayed in Grafana Plugin. But for the trace profiling module, the UI is different, that's a standalone module.
 
 ![](/media/202210/architecture_1667204553.png)
 
@@ -76,26 +74,7 @@ The next image shows a dependency map in Kubernetes.
 
 ![](/media/202210/image-3_1667204628.png)
 
-Kindling provides two versions that have different features but with the same agent. The lightweight is integrated into Prometheus, and it uses PromQL to query the data from Prometheus, so it should be adopted easily. But due to the cardinality constraint of Prometheus, we group the detailed data into buckets which throw away the detailed information.
-
-For the standard version, we provide much more detailed information because we use ElasticSearch as the back-end to store the original information.
-
-The lightweight version was open-sourced in 2022. 
-The standard version will be open-sourced in 2023. 
-
-| Feature                                          | Lightweight | Standard |
-| ------------------------------------------------ | ----------- | -------- |
-| Trace Profiling                                  | √           | √        |
-| Service Map                                      | √           | √        |
-| DNS Monitoring                                   | √           | √        |
-| TCP Status Monitoring                            | √           | √        |
-| HTTP/MySQL/Redis Detailed Information            | √           | √        |
-| Grafana Plugin Display                           | √           | √        |
-| Dump Network Traffic                             |             | √        |
-| Virtual Network Packet Tracing                  |             | √        |
-| Kubernetes Infrastructure Monitoring and Integration |             | √        |
-| Warning and Alert                                |             | √        |
-| Multi-cluster Management                         |             | √        |
+Kindling can be easily integrated with Prometheus, and we uses PromQL to query the data in the frontend, so it should be adopted easily. But due to the cardinality constraint of Prometheus, we group the detailed data into buckets which throw away the detailed information.
 
 ## Get started
 
@@ -103,7 +82,7 @@ You can deploy Kindling easily, check out the [Installation Guide](/docs/install
 
 ## Documentation
 
-The Kindling documentation is available on our [Kindling website](http://kindlingx.com).
+The Kindling documentation is available on our [Kindling website](https://kindlingx.com).
 
 ## Contributing 
 
