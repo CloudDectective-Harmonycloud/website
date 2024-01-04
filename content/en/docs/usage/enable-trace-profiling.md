@@ -15,7 +15,7 @@ toc: true
 
 ## Prerequisites
 - This feature only works on the Linux kernel 4.17 or newer.
-- We recommend that users install the SkyWalking agent of Java before enabling trace profiling for full features supported.
+- We recommend that users install **SkyWalking with the backend** and its Java agent before enabling trace profiling for full features supported. Otherwise, only the "thread profiling" is enabled and you will see the prompt "No skywalking is installed".
 
 ## Instructions
 > If you have not installed the Kindling agent, please do it first before you follow the instructions. See the [Installation](/docs/installation/kindling-agent/requirements) for how to install.

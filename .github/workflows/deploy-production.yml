@@ -21,11 +21,12 @@ jobs:
         
       - uses: webfactory/ssh-agent@v0.7.0
         with:
-          ssh-private-key: ${{ secrets.WEBSITE_HOST_KEY }}
+          ssh-private-key: ${{ secrets.WEBSITE_PRIVATE_KEY }}
       
       - name: Build and Deploy
         env: 
           WEBSITE_HOST: ${{ secrets.WEBSITE_HOST }}
+          WEBSITE_HOST_KEY: ${{ secrets.WEBSITE_HOST_KEY }}
           WEBSITE_PATH: ${{ secrets.WEBSITE_PATH }}
         run: |
           # Set the real domain
@@ -35,8 +36,7 @@ jobs:
           # Compress and transfer the tarball
           cd public && tar -cvzf public.tar.gz *
           # Add the host key
-          hostKey='kindlingx.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIfN3rkIrcVwFzs1oRYQ+pmyHmNbRWvikxRl7pRPVL/2'
-          echo "$hostKey" >> ~/.ssh/known_hosts
+          echo $WEBSITE_HOST_KEY >> ~/.ssh/known_hosts
           scp public.tar.gz "$WEBSITE_HOST":$WEBSITE_PATH/..
 
           # Update the website
