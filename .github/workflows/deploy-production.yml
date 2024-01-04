@@ -26,7 +26,6 @@ jobs:
       - name: Build and Deploy
         env: 
           WEBSITE_HOST: ${{ secrets.WEBSITE_HOST }}
-          WEBSITE_HOST_KEY: ${{ secrets.WEBSITE_HOST_KEY }}
           WEBSITE_PATH: ${{ secrets.WEBSITE_PATH }}
         run: |
           # Set the real domain
@@ -35,10 +34,7 @@ jobs:
           npm install && npm run build
           # Compress and transfer the tarball
           cd public && tar -cvzf public.tar.gz *
-          # Add the host key
-          echo $WEBSITE_HOST_KEY >> ~/.ssh/known_hosts
-          scp public.tar.gz "$WEBSITE_HOST":$WEBSITE_PATH/..
-
+          scp -o StrictHostKeyChecking=no public.tar.gz "$WEBSITE_HOST":$WEBSITE_PATH/..
           # Update the website
           ssh "$WEBSITE_HOST" << eof
           echo "Removing the old files..."
