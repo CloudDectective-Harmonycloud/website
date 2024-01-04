@@ -36,7 +36,7 @@ jobs:
           cd public && tar -cvzf public.tar.gz *
           scp -o StrictHostKeyChecking=no public.tar.gz "$WEBSITE_HOST":$WEBSITE_PATH/..
           # Update the website
-          ssh "$WEBSITE_HOST" << eof
+          ssh -o StrictHostKeyChecking=no "$WEBSITE_HOST" << eof
           echo "Removing the old files..."
           cd $WEBSITE_PATH && rm -rf *
           echo "Deploying the site..."
